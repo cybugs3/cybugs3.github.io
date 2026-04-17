@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CyBugs³ | Smart Security Solutions</title>
-    <meta name="description" content="CyBugs³ — open-source cyber security tooling by Michael Elizarov and Guy Zwerdling: threat intelligence dashboards, OSINT, IOC/YARA platforms, and Splunk detection engineering.">
+    <meta name="description" content="CyBugs³ - documented open-source security engineering by Michael Elizarov & Guy Zwerdling: threat intelligence, OSINT, IOC/YARA platforms, and Splunk detection. Public repos, reproducible installs.">
     <meta name="theme-color" content="#050505">
     <meta name="author" content="Michael Elizarov, Guy Zwerdling">
     <meta property="og:type" content="website">
     <meta property="og:title" content="CyBugs³ | Smart Security Solutions">
-    <meta property="og:description" content="Open-source frameworks for threat intelligence, detection engineering, and OSINT — built for analysts and engineers.">
-    <meta property="og:image" content="assets/Gemini_Generated_Image_a0o3v3a0o3v3a0o3.png">
+    <meta property="og:description" content="Open-source frameworks for threat intelligence, detection engineering, and OSINT - built for analysts and engineers.">
+    <meta property="og:image" content="assets/brand-opengraph.png">
     <meta property="og:image:alt" content="CyBugs³ brand mark">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="assets/Gemini_Generated_Image_a0o3v3a0o3v3a0o3.png">
+    <meta name="twitter:image" content="assets/brand-opengraph.png">
     <meta name="twitter:title" content="CyBugs³ | Smart Security Solutions">
     <meta name="twitter:description" content="Open-source frameworks for threat intelligence, detection engineering, and OSINT.">
-    <link rel="icon" href="assets/Gemini_Generated_Image_a0o3v3a0o3v3a0o3.png" type="image/png">
-    <link rel="apple-touch-icon" href="assets/Gemini_Generated_Image_a0o3v3a0o3v3a0o3.png">
+    <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="assets/brand-mark-192.png" sizes="180x180">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="selection:bg-green-500 selection:text-black">
+<body class="selection:bg-green-500 selection:text-black antialiased">
 
     <a class="skip-link" href="#main">Skip to content</a>
 
@@ -31,16 +31,17 @@
 
     <nav class="p-6 border-b border-gray-900 bg-black/80 backdrop-blur-md sticky top-0 z-50 flex flex-wrap items-center justify-between gap-4" aria-label="Primary">
         <a href="#home" class="flex items-center gap-3 min-w-0 group">
-            <img src="assets/Gemini_Generated_Image_a0o3v3a0o3v3a0o3.png" alt="CyBugs³" width="40" height="40" class="site-mark" decoding="async">
+            <img src="assets/brand-mark-512.png" alt="CyBugs³" width="40" height="40" class="site-mark" decoding="async">
             <span class="font-bold text-2xl md:text-3xl tracking-tighter text-green-500 cyber-logo leading-none">CyBugs<span class="text-white">³</span></span>
         </a>
-        <div class="flex flex-wrap items-center gap-x-6 gap-y-2 font-mono text-sm">
+        <div class="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-medium">
             <a href="#about" class="text-gray-400 hover:text-white transition">About</a>
+            <a href="#review" class="text-gray-400 hover:text-white transition">For reviewers</a>
             <a href="#projects" class="text-gray-400 hover:text-white transition">Projects</a>
-            <a href="https://github.com/michaelelizarov" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition">Michael</a>
-            <a href="https://github.com/Zwerd" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition">Guy</a>
+            <a href="https://github.com/michaelelizarov" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition font-mono-technical text-xs" title="GitHub - Michael Elizarov">M. Elizarov</a>
+            <a href="https://github.com/Zwerd" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition font-mono-technical text-xs" title="GitHub - Guy Zwerdling">G. Zwerdling</a>
         </div>
-        <div class="hidden lg:flex items-center gap-2 text-gray-600 text-xs font-mono">
+        <div class="hidden lg:flex items-center gap-2 text-gray-600 text-xs font-mono-technical">
             <span>TEAM: <span class="text-white">ELIZAROV & ZWERDLING</span></span>
             <i data-lucide="radio-tower" class="w-3 h-3 text-green-500" aria-hidden="true"></i>
         </div>
@@ -48,22 +49,22 @@
 
     <main id="main">
     <header id="home" class="container mx-auto px-6 py-20 md:py-24 flex flex-col items-center gap-14">
-        <div class="w-full max-w-4xl cyber-panel p-2">
-            <div class="p-3 border-b border-gray-900 flex justify-between items-center text-xs text-gray-500 font-mono">
+        <div class="w-full max-w-4xl cyber-panel p-2 font-mono-technical">
+            <div class="p-3 border-b border-gray-900 flex justify-between items-center text-xs text-gray-500">
                 <div class="flex gap-2" aria-hidden="true">
                     <span class="w-2 h-2 rounded-full bg-red-500"></span>
                     <span class="w-2 h-2 rounded-full bg-yellow-500"></span>
                     <span class="w-2 h-2 rounded-full bg-green-500"></span>
                 </div>
-                <div>bash — core@cybugs3</div>
+                <div>bash - core@cybugs3</div>
                 <div class="flex gap-2 text-green-500" aria-hidden="true">
                     <i data-lucide="monitor" class="w-3 h-3"></i>
                     <i data-lucide="shield" class="w-3 h-3"></i>
                 </div>
             </div>
-            <div id="terminal" class="p-5 terminal-viewport text-lg font-mono" role="log" aria-live="polite">
+            <div id="terminal" class="p-5 terminal-viewport text-lg font-mono-technical" role="log" aria-live="polite">
                 </div>
-            <div class="p-4 border-t border-gray-900 bg-black/50 live-log text-xs text-gray-600 font-mono flex flex-wrap items-center justify-between gap-2">
+            <div class="p-4 border-t border-gray-900 bg-black/50 live-log text-xs text-gray-600 font-mono-technical flex flex-wrap items-center justify-between gap-2">
                 <div>LIVE ACTIVITY LOG:</div>
                 <div id="log-entry" class="log-entry">> System idle...</div>
                 <div id="status-display">SYS: <span class="text-green-500">READY</span></div>
@@ -71,11 +72,11 @@
         </div>
         
         <div class="text-center max-w-3xl flex flex-col items-center gap-6">
-            <img src="assets/Gemini_Generated_Image_a0o3v3a0o3v3a0o3.png" alt="" width="96" height="96" class="site-mark site-mark--hero" decoding="async" fetchpriority="high" aria-hidden="true">
+            <img src="assets/brand-mark-512.png" alt="" width="96" height="96" class="site-mark site-mark--hero" decoding="async" fetchpriority="high" aria-hidden="true">
             <div>
-                <p class="section-label mb-4">Threat intelligence · Detection engineering · OSINT</p>
-                <h1 class="text-4xl md:text-6xl font-extrabold mb-5 tracking-tighter text-white">Smart. Security. Solutions.</h1>
-                <p class="text-gray-400 text-lg leading-relaxed">Production-minded open source for blue teams: from APT research and OSINT pipelines to IOC/YARA operations and Splunk detection workflows.</p>
+                <p class="section-label mb-4">Portfolio · Security engineering · Open source</p>
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 tracking-tight text-white">Smart. Security. Solutions.</h1>
+                <p class="text-gray-400 text-lg leading-relaxed max-w-2xl mx-auto">We ship <strong class="text-gray-200 font-semibold">documented, reviewable tools</strong> for threat intelligence, detection engineering, and SOC operations-so hiring teams can read the code, reproduce installs, and assess scope the same way you would in a technical interview.</p>
             </div>
         </div>
     </header>
@@ -84,8 +85,8 @@
         <div class="max-w-5xl mx-auto">
             <p class="section-label mb-3">Principals</p>
             <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight mb-4">Who we are</h2>
-            <p class="text-gray-400 max-w-3xl mb-12 leading-relaxed">
-                We design and ship tools that analysts and detection engineers can run in real SOC programs—clear architecture, documented install paths, and code you can audit.
+            <p class="text-gray-400 max-w-3xl mb-12 leading-relaxed text-[15px]">
+                We focus on <strong class="text-gray-200 font-medium">clarity and operability</strong>: architectures you can explain in an interview, README-driven setup, and behavior you can validate in your own lab-not slide-ware.
             </p>
             <div class="grid md:grid-cols-2 gap-8">
                 <article class="cyber-panel p-6 rounded-lg border border-gray-900 hover:border-green-500/40 transition">
@@ -93,8 +94,8 @@
                         <i data-lucide="user-cog" class="w-10 h-10 text-green-500 shrink-0 opacity-90" aria-hidden="true"></i>
                         <div>
                             <h3 class="text-lg font-bold text-white mb-1">Michael Elizarov</h3>
-                            <p class="text-xs font-mono text-green-500/90 mb-3">Threat intel · OSINT · Splunk automation</p>
-                            <p class="text-gray-400 text-sm leading-relaxed">Builds large-scale intelligence surfaces and analyst workflows—including the APT Intelligence Dashboard, LinkedIn OSINT Toolkit, and Splunk Detection Engineer Agent for grounded SPL generation.</p>
+                            <p class="text-xs font-mono-technical text-green-500/90 mb-3">Threat intel · OSINT · Splunk automation</p>
+                            <p class="text-gray-400 text-sm leading-relaxed">Threat intelligence surfaces and end-to-end OSINT workflows; Splunk-oriented automation with retrieval-grounded SPL generation. Public code on GitHub with install paths and docs.</p>
                         </div>
                     </div>
                 </article>
@@ -103,11 +104,25 @@
                         <i data-lucide="server" class="w-10 h-10 text-green-500 shrink-0 opacity-90" aria-hidden="true"></i>
                         <div>
                             <h3 class="text-lg font-bold text-white mb-1">Guy Zwerdling</h3>
-                            <p class="text-xs font-mono text-green-500/90 mb-3">Platform engineering · SOC-grade TIP</p>
-                            <p class="text-gray-400 text-sm leading-relaxed">Delivers ZIoCHub (ziochub): an IOC and YARA management platform with feeds, optional enterprise integrations, and offline-first deployment for regulated environments.</p>
+                            <p class="text-xs font-mono-technical text-green-500/90 mb-3">Platform engineering · SOC-grade TIP</p>
+                            <p class="text-gray-400 text-sm leading-relaxed">ZIoCHub (ziochub): IOC/YARA lifecycle, feeds, and optional integrations-designed for production SOC use and offline-capable deployment where required.</p>
                         </div>
                     </div>
                 </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="review" class="container mx-auto px-6 py-20 border-t border-gray-900 bg-black/30">
+        <div class="max-w-5xl mx-auto">
+            <p class="section-label mb-3">Due diligence</p>
+            <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight mb-6">For reviewers &amp; interviewers</h2>
+            <div class="cyber-panel p-8 rounded-lg border border-gray-800 max-w-3xl">
+                <ul class="space-y-4 text-gray-400 text-[15px] leading-relaxed list-none">
+                    <li class="flex gap-3"><span class="text-green-500 font-mono-technical shrink-0" aria-hidden="true">01</span><span><strong class="text-gray-200 font-medium">Public source of truth.</strong> Every project links to a GitHub repository you can clone-README, license, and security policy live there.</span></li>
+                    <li class="flex gap-3"><span class="text-green-500 font-mono-technical shrink-0" aria-hidden="true">02</span><span><strong class="text-gray-200 font-medium">Reproducible setup.</strong> Project pages summarize installation and run commands aligned with upstream documentation-so you can validate claims in a VM.</span></li>
+                    <li class="flex gap-3"><span class="text-green-500 font-mono-technical shrink-0" aria-hidden="true">03</span><span><strong class="text-gray-200 font-medium">This site is intentionally static.</strong> HTML/CSS/JS only-no accounts, no backend, no analytics scripts-fast to load and trivial to inspect (View Source).</span></li>
+                </ul>
             </div>
         </div>
     </section>
@@ -117,9 +132,9 @@
             <p class="section-label mb-3">Portfolio</p>
             <h2 class="text-3xl font-bold flex flex-wrap items-center gap-3 text-white tracking-tight">
                 <i data-lucide="terminal" class="w-8 h-8 text-green-500" aria-hidden="true"></i>
-                <span>Core repositories</span>
+                <span>Selected repositories</span>
             </h2>
-            <p class="text-gray-500 mt-4 max-w-2xl text-sm leading-relaxed">Each card opens a static project brief with install and run steps; source code and releases stay on GitHub.</p>
+            <p class="text-gray-500 mt-4 max-w-2xl text-sm leading-relaxed">Each card opens a concise brief (scope, install, run). Authoritative source code and issues remain on GitHub.</p>
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
@@ -133,8 +148,8 @@
                             <span class="text-xs font-bold border border-green-500 text-green-500 px-3 py-1 rounded">ACTIVE</span>
                         </div>
                         <h3 class="text-2xl font-bold mb-1 tracking-tighter text-white">APT Intelligence Dashboard</h3>
-                        <p class="text-xs font-mono text-gray-500 mb-4">Author: Michael Elizarov</p>
-                        <p class="text-gray-400 text-sm mb-6">Live-sourced APT intelligence: maps, timelines, actor dossiers, and linked reports—built for researchers and SOC teams.</p>
+                        <p class="text-xs font-mono-technical text-gray-500 mb-4">Author: Michael Elizarov</p>
+                        <p class="text-gray-400 text-sm mb-6">Live-sourced APT intelligence: maps, timelines, actor dossiers, and linked reports-built for researchers and SOC teams.</p>
                     </div>
                     <div class="flex items-center justify-between gap-4 text-xs font-bold uppercase text-white mt-auto pt-6 border-t border-gray-900 group-hover:border-green-500 group-hover:text-green-500 transition">
                         <span class="flex flex-wrap gap-2"><span>Dashboard</span> <span>Threat Hunting</span></span>
@@ -152,7 +167,7 @@
                             <span class="text-xs font-bold border border-green-500 text-green-500 px-3 py-1 rounded">ACTIVE</span>
                         </div>
                         <h3 class="text-2xl font-bold mb-1 tracking-tighter text-white">LinkedIn OSINT Toolkit</h3>
-                        <p class="text-xs font-mono text-gray-500 mb-4">Author: Michael Elizarov</p>
+                        <p class="text-xs font-mono-technical text-gray-500 mb-4">Author: Michael Elizarov</p>
                         <p class="text-gray-400 text-sm mb-6">End-to-end OSINT funnel: company discovery, controlled scraping, role classification, and org-chart visualization.</p>
                     </div>
                     <div class="flex items-center justify-between gap-4 text-xs font-bold uppercase text-white mt-auto pt-6 border-t border-gray-900 group-hover:border-green-500 group-hover:text-green-500 transition">
@@ -171,8 +186,8 @@
                             <span class="text-xs font-bold border border-green-500 text-green-500 px-3 py-1 rounded">STABLE</span>
                         </div>
                         <h3 class="text-2xl font-bold mb-1 tracking-tighter text-white">ziochub</h3>
-                        <p class="text-xs font-mono text-gray-500 mb-4">Author: Guy Zwerdling</p>
-                        <p class="text-gray-400 text-sm mb-6">ZIoCHub: IOC &amp; YARA lifecycle, analyst workflows, multi-vendor feeds, and optional MISP / ESA integrations—offline-capable.</p>
+                        <p class="text-xs font-mono-technical text-gray-500 mb-4">Author: Guy Zwerdling</p>
+                        <p class="text-gray-400 text-sm mb-6">ZIoCHub: IOC &amp; YARA lifecycle, analyst workflows, multi-vendor feeds, and optional MISP / ESA integrations-offline-capable.</p>
                     </div>
                     <div class="flex items-center justify-between gap-4 text-xs font-bold uppercase text-white mt-auto pt-6 border-t border-gray-900 group-hover:border-green-500 group-hover:text-green-500 transition">
                         <span class="flex flex-wrap gap-2"><span>Flask</span> <span>IOC</span> <span>YARA</span></span>
@@ -190,8 +205,8 @@
                             <span class="text-xs font-bold border border-green-500 text-green-500 px-3 py-1 rounded">ACTIVE</span>
                         </div>
                         <h3 class="text-2xl font-bold mb-1 tracking-tighter text-white">Splunk Detection Agent</h3>
-                        <p class="text-xs font-mono text-gray-500 mb-4">Author: Michael Elizarov</p>
-                        <p class="text-gray-400 text-sm mb-6">RAG-grounded SPL from natural language, with optional live validation—built for detection engineers and threat hunters.</p>
+                        <p class="text-xs font-mono-technical text-gray-500 mb-4">Author: Michael Elizarov</p>
+                        <p class="text-gray-400 text-sm mb-6">RAG-grounded SPL from natural language, with optional live validation-built for detection engineers and threat hunters.</p>
                     </div>
                     <div class="flex items-center justify-between gap-4 text-xs font-bold uppercase text-white mt-auto pt-6 border-t border-gray-900 group-hover:border-green-500 group-hover:text-green-500 transition">
                         <span class="flex flex-wrap gap-2"><span>Splunk</span> <span>SIEM</span> <span>Detection</span></span>
@@ -204,11 +219,10 @@
     </section>
     </main>
 
-    <footer class="border-t border-gray-900 py-12 px-6 bg-black/80 font-mono text-center text-xs text-gray-600 flex flex-col gap-3 max-w-2xl mx-auto">
-        <p>CyBugs³ © 2026 Smart Security Solutions [S³]</p>
-        <p>Developed &amp; maintained by <span class="text-gray-400">Michael Elizarov &amp; Guy Zwerdling</span>.</p>
-        <p>Each repository is published under its own license; see the GitHub project for terms, security policy, and support.</p>
-        <p class="text-green-500">root@cybugs3:~$ connection closed.</p>
+    <footer class="border-t border-gray-900 py-12 px-6 bg-black/80 text-center text-xs text-gray-600 flex flex-col gap-4 max-w-2xl mx-auto">
+        <p class="text-sm text-gray-500"><span class="text-white font-semibold">CyBugs³</span> · Smart Security Solutions</p>
+        <p>Michael Elizarov &amp; Guy Zwerdling - security engineering &amp; platform work shared under open-source licenses per repository.</p>
+        <p>License, security disclosure, and contribution guidelines: see each GitHub repository. Questions belong in project issues or discussions there.</p>
     </footer>
 
     <script type="application/ld+json">
@@ -217,12 +231,12 @@
       "@type": "Organization",
       "name": "CyBugs³",
       "alternateName": "CyBugs3",
-      "description": "Open-source cyber security tooling for threat intelligence, OSINT, IOC/YARA operations, and Splunk detection engineering.",
+      "description": "Documented open-source security engineering: threat intelligence, OSINT, IOC/YARA platforms, and Splunk detection-public repositories with reproducible setup.",
       "logo": {
         "@type": "ImageObject",
-        "url": "assets/Gemini_Generated_Image_a0o3v3a0o3v3a0o3.png"
+        "url": "assets/brand-mark-512.png"
       },
-      "image": "assets/Gemini_Generated_Image_a0o3v3a0o3v3a0o3.png",
+      "image": "assets/brand-opengraph.png",
       "founder": [
         { "@type": "Person", "name": "Michael Elizarov", "sameAs": "https://github.com/michaelelizarov" },
         { "@type": "Person", "name": "Guy Zwerdling", "sameAs": "https://github.com/Zwerd" }

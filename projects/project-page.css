@@ -10,6 +10,7 @@
     margin-top: 0;
 }
 .project-prose pre {
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
     background: rgba(0, 0, 0, 0.5);
     border: 1px solid #1a1a1a;
     border-radius: 4px;

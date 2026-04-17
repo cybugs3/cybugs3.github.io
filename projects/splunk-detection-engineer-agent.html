@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Splunk Detection Engineer Agent | CyBugs³</title>
-    <meta name="description" content="Splunk Detection Engineer Agent — RAG-grounded SPL from natural language. Install, ingest knowledge bases, and run CLI or web UI. Guide by CyBugs³.">
+    <meta name="description" content="Splunk Detection Engineer Agent - RAG-grounded SPL from natural language. Install, ingest knowledge bases, and run CLI or web UI. Guide by CyBugs³.">
     <meta name="theme-color" content="#050505">
-    <link rel="icon" href="../assets/Gemini_Generated_Image_a0o3v3a0o3v3a0o3.png" type="image/png">
-    <link rel="apple-touch-icon" href="../assets/Gemini_Generated_Image_a0o3v3a0o3v3a0o3.png">
+    <link rel="icon" href="../assets/favicon-32.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="../assets/brand-mark-192.png" sizes="180x180">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Splunk Detection Engineer Agent | CyBugs³">
-    <meta property="og:description" content="Splunk Detection Engineer Agent — RAG-grounded SPL from natural language. Install, ingest knowledge bases, and run CLI or web UI. Guide by CyBugs³.">
-    <meta property="og:image" content="../assets/Gemini_Generated_Image_a0o3v3a0o3v3a0o3.png">
+    <meta property="og:description" content="Splunk Detection Engineer Agent - RAG-grounded SPL from natural language. Install, ingest knowledge bases, and run CLI or web UI. Guide by CyBugs³.">
+    <meta property="og:image" content="../assets/brand-opengraph.png">
     <meta property="og:image:alt" content="CyBugs³ brand mark">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="../assets/Gemini_Generated_Image_a0o3v3a0o3v3a0o3.png">
+    <meta name="twitter:image" content="../assets/brand-opengraph.png">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="project-page.css">
 </head>
-<body class="selection:bg-green-500 selection:text-black">
+<body class="selection:bg-green-500 selection:text-black antialiased">
 
     <a class="skip-link" href="#main">Skip to content</a>
 
@@ -29,11 +29,12 @@
 
     <nav class="p-6 border-b border-gray-900 bg-black/80 backdrop-blur-md sticky top-0 z-50 flex flex-wrap items-center justify-between gap-4" aria-label="Primary">
         <a href="../index.html" class="flex items-center gap-3 min-w-0">
-            <img src="../assets/Gemini_Generated_Image_a0o3v3a0o3v3a0o3.png" alt="CyBugs³" width="40" height="40" class="site-mark" decoding="async" fetchpriority="high">
+            <img src="../assets/brand-mark-512.png" alt="CyBugs³" width="40" height="40" class="site-mark" decoding="async" fetchpriority="high">
             <span class="font-bold text-xl md:text-2xl tracking-tighter text-green-500 cyber-logo">CyBugs<span class="text-white">³</span></span>
         </a>
-        <div class="flex flex-wrap items-center gap-x-5 gap-y-2 font-mono text-sm">
+        <div class="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm font-medium">
             <a href="../index.html#about" class="text-gray-400 hover:text-white transition">About</a>
+            <a href="../index.html#review" class="text-gray-400 hover:text-white transition">For reviewers</a>
             <a href="../index.html#projects" class="text-gray-400 hover:text-white transition">Projects</a>
             <a href="https://github.com/michaelelizarov/splunk-detection-engineer-agent" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition">GitHub</a>
         </div>
@@ -89,7 +90,7 @@ pip install -r requirements.txt
 playwright install chromium
 
 cp config/config.yaml.example config/config.yaml
-# Edit config/config.yaml — API keys + Splunk
+# Edit config/config.yaml - API keys + Splunk
 
 python -m src.rag_spl_docs ingest
 python -m src.rag_detections ingest
@@ -114,7 +115,7 @@ python -m src.api.server
         </div>
     </main>
 
-    <footer class="border-t border-gray-900 py-10 px-6 bg-black/80 font-mono text-center text-xs text-gray-700 mt-16">
+    <footer class="border-t border-gray-900 py-10 px-6 bg-black/80 text-center text-xs text-gray-600 mt-16">
         <p>CyBugs³ © 2026 · <a href="../index.html" class="text-gray-500 hover:text-green-500">Home</a></p>
     </footer>
 
