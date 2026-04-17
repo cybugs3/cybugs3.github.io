@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ziochub (ZIoCHub) | CyBugs³</title>
+    <meta name="description" content="ZIoCHub (ziochub) — IOC & YARA management, feeds, MISP and optional Cisco ESA sync. Install (online/offline) and operations overview by CyBugs³.">
+    <meta name="theme-color" content="#050505">
+    <link rel="icon" href="../assets/Gemini_Generated_Image_a0o3v3a0o3v3a0o3.png" type="image/png">
+    <link rel="apple-touch-icon" href="../assets/Gemini_Generated_Image_a0o3v3a0o3v3a0o3.png">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ziochub (ZIoCHub) | CyBugs³">
+    <meta property="og:description" content="ZIoCHub (ziochub) — IOC & YARA management, feeds, MISP and optional Cisco ESA sync. Install (online/offline) and operations overview by CyBugs³.">
+    <meta property="og:image" content="../assets/Gemini_Generated_Image_a0o3v3a0o3v3a0o3.png">
+    <meta property="og:image:alt" content="CyBugs³ brand mark">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="../assets/Gemini_Generated_Image_a0o3v3a0o3v3a0o3.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="project-page.css">
+</head>
+<body class="selection:bg-green-500 selection:text-black">
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <canvas id="matrix-canvas"></canvas>
+
+    <nav class="p-6 border-b border-gray-900 bg-black/80 backdrop-blur-md sticky top-0 z-50 flex flex-wrap items-center justify-between gap-4" aria-label="Primary">
+        <a href="../index.html" class="flex items-center gap-3 min-w-0">
+            <img src="../assets/Gemini_Generated_Image_a0o3v3a0o3v3a0o3.png" alt="CyBugs³" width="40" height="40" class="site-mark" decoding="async" fetchpriority="high">
+            <span class="font-bold text-xl md:text-2xl tracking-tighter text-green-500 cyber-logo">CyBugs<span class="text-white">³</span></span>
+        </a>
+        <div class="flex flex-wrap items-center gap-x-5 gap-y-2 font-mono text-sm">
+            <a href="../index.html#about" class="text-gray-400 hover:text-white transition">About</a>
+            <a href="../index.html#projects" class="text-gray-400 hover:text-white transition">Projects</a>
+            <a href="https://github.com/Zwerd/ziochub" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition">GitHub</a>
+        </div>
+    </nav>
+
+    <main id="main" class="container mx-auto px-6 py-16 max-w-4xl relative z-10">
+        <p class="text-sm text-gray-500 font-mono mb-6">
+            <a href="../index.html#projects" class="text-green-500 hover:underline">← Core Repositories</a>
+        </p>
+
+        <header class="mb-10">
+            <p class="text-xs font-mono text-gray-500 mb-2">Guy Zwerdling · STABLE</p>
+            <h1 class="text-3xl md:text-4xl font-extrabold tracking-tighter text-white mb-4">ziochub <span class="text-gray-500 text-2xl font-mono font-normal">(ZIoCHub)</span></h1>
+            <p class="text-gray-400 text-lg leading-relaxed">
+                IOC and YARA management platform for SOC teams: SQLite-backed storage, plain-text feeds for security devices, optional MISP and Cisco ESA integrations, and an offline-friendly deployment story.
+            </p>
+        </header>
+
+        <section aria-labelledby="shots-zio">
+            <h2 id="shots-zio" class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                <i data-lucide="image" class="w-5 h-5 text-green-500" aria-hidden="true"></i> Product visuals
+            </h2>
+            <p class="text-gray-500 text-sm font-mono mb-6">For product UI shots, add PNG or WebP under <code class="text-green-500">projects/media/ziochub/</code> and wire them in this section (100% static).</p>
+            <div class="grid md:grid-cols-2 gap-6">
+                <figure class="project-figure">
+                    <div class="aspect-video bg-black/50 flex items-center justify-center text-gray-500 text-xs font-mono p-6 text-center border-b border-gray-900">
+                        <span><code class="text-green-500">media/ziochub/dashboard.png</code></span>
+                    </div>
+                    <figcaption>Main dashboard — add the image file, then swap this div for an img tag pointing to it</figcaption>
+                </figure>
+                <figure class="project-figure">
+                    <div class="aspect-video bg-black/50 flex items-center justify-center text-gray-500 text-xs font-mono p-6 text-center border-b border-gray-900">
+                        <span>Optional: <code class="text-green-500">media/ziochub/feeds.png</code></span>
+                    </div>
+                    <figcaption>Feeds / YARA UI (optional)</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <div class="project-prose">
+            <h2>Installation</h2>
+            <p class="text-gray-500 text-sm mb-2">On Linux with internet (from upstream README). Air-gapped flow uses <code class="text-green-500">package_offline.sh</code>—see <code class="text-green-500">OFFLINE.md</code> on GitHub.</p>
+            <pre>git clone https://github.com/Zwerd/ziochub.git
+cd ziochub
+sudo ./setup.sh</pre>
+
+            <h2>Run</h2>
+            <p class="text-gray-500 text-sm mb-2">After setup, the installer configures services; day-to-day access is via the web UI on your configured host and port (see repo docs for systemd and HTTPS).</p>
+            <pre># Offline bundle example (on target server):
+# unzip ziochub_installer.zip -d ziochub_install
+# cd ziochub_install && sudo ./setup.sh --offline</pre>
+        </div>
+
+        <div class="mt-12 flex flex-wrap gap-4">
+            <a href="https://github.com/Zwerd/ziochub" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 bg-green-500 text-black font-bold font-mono text-sm rounded hover:bg-green-400 transition">
+                <i data-lucide="github" class="w-5 h-5"></i> View on GitHub
+            </a>
+            <a href="../index.html#projects" class="inline-flex items-center gap-2 px-6 py-3 border border-gray-700 text-gray-300 font-mono text-sm rounded hover:border-green-500 hover:text-green-500 transition">All projects</a>
+        </div>
+    </main>
+
+    <footer class="border-t border-gray-900 py-10 px-6 bg-black/80 font-mono text-center text-xs text-gray-700 mt-16">
+        <p>CyBugs³ © 2026 · <a href="../index.html" class="text-gray-500 hover:text-green-500">Home</a></p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

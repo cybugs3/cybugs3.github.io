@@ -21,7 +21,29 @@ body {
     pointer-events: none;
 }
 
-/* CyBugs Logo Glow & Glitch */
+/* Brand mark (PNG) — no glitch on raster */
+.site-mark {
+    flex-shrink: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.375rem;
+    object-fit: contain;
+    object-position: center;
+    padding: 2px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 255, 65, 0.35);
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.15);
+    background: #0a0a0a;
+}
+
+.site-mark--hero {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 0.5rem;
+    padding: 4px;
+}
+
+/* Wordmark glow & glitch (text only) */
 .cyber-logo {
     filter: drop-shadow(0 0 10px #00ff41) drop-shadow(0 0 20px rgba(0, 255, 65, 0.5));
     animation: glitch-scan 8s infinite;
@@ -101,4 +123,52 @@ body {
 @keyframes fade-in-out {
     0%, 100% { opacity: 0.4; }
     50% { opacity: 0.8; }
+}
+
+/* Skip link (keyboard / a11y) */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    z-index: 9999;
+    padding: 0.75rem 1rem;
+    background: #00ff41;
+    color: #050505;
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+.skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+}
+
+/* Section rhythm */
+.section-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #737373;
+}
+
+/* Keyboard focus — visible on dark UI */
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid #00ff41;
+    outline-offset: 3px;
+}
+
+a:focus:not(:focus-visible) {
+    outline: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .cyber-logo {
+        animation: none;
+    }
+    .live-log .log-entry {
+        animation: none;
+        opacity: 0.75;
+    }
+    .cyber-card:hover {
+        transform: none;
+    }
 }

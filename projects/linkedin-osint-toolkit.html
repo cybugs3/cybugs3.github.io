@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn OSINT Toolkit | CyBugs³</title>
+    <meta name="description" content="LinkedIn OSINT Toolkit — company discovery, scraping, classification, and org-chart viewer. Install and run guide by CyBugs³.">
+    <meta name="theme-color" content="#050505">
+    <link rel="icon" href="../assets/Gemini_Generated_Image_a0o3v3a0o3v3a0o3.png" type="image/png">
+    <link rel="apple-touch-icon" href="../assets/Gemini_Generated_Image_a0o3v3a0o3v3a0o3.png">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="LinkedIn OSINT Toolkit | CyBugs³">
+    <meta property="og:description" content="LinkedIn OSINT Toolkit — company discovery, scraping, classification, and org-chart viewer. Install and run guide by CyBugs³.">
+    <meta property="og:image" content="../assets/Gemini_Generated_Image_a0o3v3a0o3v3a0o3.png">
+    <meta property="og:image:alt" content="CyBugs³ brand mark">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="../assets/Gemini_Generated_Image_a0o3v3a0o3v3a0o3.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="project-page.css">
+</head>
+<body class="selection:bg-green-500 selection:text-black">
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <canvas id="matrix-canvas"></canvas>
+
+    <nav class="p-6 border-b border-gray-900 bg-black/80 backdrop-blur-md sticky top-0 z-50 flex flex-wrap items-center justify-between gap-4" aria-label="Primary">
+        <a href="../index.html" class="flex items-center gap-3 min-w-0">
+            <img src="../assets/Gemini_Generated_Image_a0o3v3a0o3v3a0o3.png" alt="CyBugs³" width="40" height="40" class="site-mark" decoding="async" fetchpriority="high">
+            <span class="font-bold text-xl md:text-2xl tracking-tighter text-green-500 cyber-logo">CyBugs<span class="text-white">³</span></span>
+        </a>
+        <div class="flex flex-wrap items-center gap-x-5 gap-y-2 font-mono text-sm">
+            <a href="../index.html#about" class="text-gray-400 hover:text-white transition">About</a>
+            <a href="../index.html#projects" class="text-gray-400 hover:text-white transition">Projects</a>
+            <a href="https://github.com/michaelelizarov/linkedin-osint-toolkit" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition">GitHub</a>
+        </div>
+    </nav>
+
+    <main id="main" class="container mx-auto px-6 py-16 max-w-4xl relative z-10">
+        <p class="text-sm text-gray-500 font-mono mb-6">
+            <a href="../index.html#projects" class="text-green-500 hover:underline">← Core Repositories</a>
+        </p>
+
+        <header class="mb-10">
+            <p class="text-xs font-mono text-gray-500 mb-2">Michael Elizarov · ACTIVE</p>
+            <h1 class="text-3xl md:text-4xl font-extrabold tracking-tighter text-white mb-4">LinkedIn OSINT Toolkit</h1>
+            <p class="text-gray-400 text-lg leading-relaxed">
+                Python toolkit for company discovery, employee scraping, role classification, and org-chart visualization—wired through a single funnel script and a standalone HTML viewer.
+            </p>
+        </header>
+
+        <section aria-labelledby="shots-li">
+            <h2 id="shots-li" class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                <i data-lucide="image" class="w-5 h-5 text-green-500"></i> Screenshots
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <figure class="project-figure">
+                    <img src="https://raw.githubusercontent.com/michaelelizarov/linkedin-osint-toolkit/main/assets/screenshots/Tree.png" width="800" height="500" alt="Org chart tree view" loading="lazy" decoding="async">
+                    <figcaption>Tree view (org chart viewer)</figcaption>
+                </figure>
+                <figure class="project-figure">
+                    <img src="https://raw.githubusercontent.com/michaelelizarov/linkedin-osint-toolkit/main/assets/screenshots/Matrix.png" width="800" height="500" alt="Org chart matrix view" loading="lazy" decoding="async">
+                    <figcaption>Matrix view</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <div class="project-prose">
+            <h2>Prerequisites</h2>
+            <p class="text-gray-500 text-sm mb-2">Python 3.8+, Firefox, and network access for Selenium (geckodriver is resolved via webdriver-manager at runtime).</p>
+
+            <h2>Installation</h2>
+            <pre>git clone https://github.com/michaelelizarov/linkedin-osint-toolkit.git
+cd linkedin-osint-toolkit
+python -m venv venv
+
+# Linux / macOS
+source venv/bin/activate
+# Windows (PowerShell)
+# .\venv\Scripts\Activate.ps1
+
+pip install -r requirements.txt
+cp .env.example .env
+# Edit .env — set LINKEDIN_EMAIL and LINKEDIN_PASSWORD (see repo docs).</pre>
+
+            <h2>Run</h2>
+            <p class="text-gray-500 text-sm mb-2">Example: full funnel with one browser session (approve OTP on your device when prompted).</p>
+            <pre>python src/osint_funnel.py --geo-code 103644278 --keyword "cybersecurity" --limit 5</pre>
+            <p class="text-gray-500 text-sm mb-2">Visualize JSON output in the browser:</p>
+            <pre># Open in a browser (file:// or via a static server):
+src/org_chart_viewer.html</pre>
+        </div>
+
+        <div class="mt-12 flex flex-wrap gap-4">
+            <a href="https://github.com/michaelelizarov/linkedin-osint-toolkit" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 bg-green-500 text-black font-bold font-mono text-sm rounded hover:bg-green-400 transition">
+                <i data-lucide="github" class="w-5 h-5"></i> View on GitHub
+            </a>
+            <a href="../index.html#projects" class="inline-flex items-center gap-2 px-6 py-3 border border-gray-700 text-gray-300 font-mono text-sm rounded hover:border-green-500 hover:text-green-500 transition">All projects</a>
+        </div>
+    </main>
+
+    <footer class="border-t border-gray-900 py-10 px-6 bg-black/80 font-mono text-center text-xs text-gray-700 mt-16">
+        <p>CyBugs³ © 2026 · <a href="../index.html" class="text-gray-500 hover:text-green-500">Home</a></p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

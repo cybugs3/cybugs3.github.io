@@ -7,20 +7,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const canvas = document.getElementById('matrix-canvas');
     if (canvas) {
         const ctx = canvas.getContext('2d');
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-        
         const letters = "0123456789ABCDEF!@#$%^&*()<>{}[]/-+".split('');
         const fontSize = 16;
-        const columns = canvas.width / fontSize;
-        const drops = Array(Math.floor(columns)).fill(1);
-        
+        let drops = [];
+        let matrixInterval = null;
+        const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+        function syncMatrixDimensions() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            const cols = Math.max(1, Math.floor(canvas.width / fontSize));
+            drops = Array(cols).fill(1);
+        }
+
         function drawMatrix() {
             ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
             ctx.fillRect(0, 0, canvas.width, canvas.height);
             ctx.fillStyle = '#00ff41';
             ctx.font = fontSize + 'px monospace';
-            
+
             drops.forEach((y, i) => {
                 const text = letters[Math.floor(Math.random() * letters.length)];
                 ctx.fillText(text, i * fontSize, y * fontSize);
@@ -30,12 +35,37 @@ document.addEventListener('DOMContentLoaded', () => {
                 drops[i]++;
             });
         }
-        setInterval(drawMatrix, 40);
 
-        // Handle window resize for canvas
+        function paintMatrixStatic() {
+            ctx.fillStyle = '#050505';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+        }
+
+        function applyMatrixMotionPreference() {
+            if (matrixInterval !== null) {
+                clearInterval(matrixInterval);
+                matrixInterval = null;
+            }
+            syncMatrixDimensions();
+            if (motionQuery.matches) {
+                paintMatrixStatic();
+            } else {
+                drawMatrix();
+                matrixInterval = setInterval(drawMatrix, 40);
+            }
+        }
+
+        applyMatrixMotionPreference();
+        if (typeof motionQuery.addEventListener === 'function') {
+            motionQuery.addEventListener('change', applyMatrixMotionPreference);
+        } else if (typeof motionQuery.addListener === 'function') {
+            motionQuery.addListener(applyMatrixMotionPreference);
+        }
         window.addEventListener('resize', () => {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
+            syncMatrixDimensions();
+            if (motionQuery.matches) {
+                paintMatrixStatic();
+            }
         });
     }
 

@@ -1,0 +1,42 @@
+/* Shared styles for static project landing pages */
+.project-prose h2 {
+    color: #fafafa;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+}
+.project-prose h2:first-of-type {
+    margin-top: 0;
+}
+.project-prose pre {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #1a1a1a;
+    border-radius: 4px;
+    padding: 1rem 1.25rem;
+    font-size: 0.8rem;
+    overflow-x: auto;
+    color: #a3a3a3;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+.project-figure {
+    background: rgba(10, 10, 10, 0.85);
+    border: 1px solid #1a1a1a;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.project-figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #1a1a1a;
+}
+.project-figure figcaption {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.65rem;
+    color: #737373;
+    font-family: 'JetBrains Mono', monospace;
+}
