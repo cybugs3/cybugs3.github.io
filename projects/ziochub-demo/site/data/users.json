@@ -1,0 +1,74 @@
+[
+  {
+    "username": "eitang",
+    "display_name": "Eitan Golan",
+    "role": "Security Analyst Tier 1",
+    "is_admin": false,
+    "description": "Security Analyst Tier 1",
+    "image": "eitang.jpg"
+  },
+  {
+    "username": "idom",
+    "display_name": "Ido Mizrahi",
+    "role": "Security Analyst Tier 2",
+    "is_admin": false,
+    "description": "Security Analyst Tier 2",
+    "image": "idom.jpg"
+  },
+  {
+    "username": "shirac",
+    "display_name": "Shira Cohen",
+    "role": "Senior Incident Responder Tier 3",
+    "is_admin": false,
+    "description": "Senior Incident Responder Tier 3",
+    "image": "shirac.jpg"
+  },
+  {
+    "username": "michalm",
+    "display_name": "Michal Malka",
+    "role": "Malware Analyst",
+    "is_admin": false,
+    "description": "Malware Analyst",
+    "image": "michalm.jpg"
+  },
+  {
+    "username": "tamarf",
+    "display_name": "Tamar Friedman",
+    "role": "Security Analyst Tier 1",
+    "is_admin": false,
+    "description": "Security Analyst Tier 1",
+    "image": "tamarf.jpg"
+  },
+  {
+    "username": "nira",
+    "display_name": "Nir Avraham",
+    "role": "Vulnerability Management Specialist",
+    "is_admin": false,
+    "description": "Vulnerability Management Specialist",
+    "image": "nira.jpg"
+  },
+  {
+    "username": "omers",
+    "display_name": "Omer Shapira",
+    "role": "SOC Automation Engineer",
+    "is_admin": false,
+    "description": "SOC Automation Engineer",
+    "image": "omers.jpg"
+  },
+  {
+    "username": "yaelb",
+    "display_name": "Yael Bitton",
+    "role": "Threat Intelligence Analyst",
+    "is_admin": false,
+    "description": "Threat Intelligence Analyst",
+    "image": "yaelb.jpg"
+  },
+  {
+    "username": "oril",
+    "display_name": "Ori Levy",
+    "role": "SOC Manager",
+    "is_admin": true,
+    "description": "SOC Manager",
+    "image": "oril.jpg"
+  }
+]

@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "name": "Fake Gate",
+    "description": "Focuses on injecting Webshells and Backdoor scripts into vulnerable servers, specifically targeting WordPress and K8s environments.",
+    "dir": "ltr",
+    "has_reference_image": false
+  },
+  {
+    "id": 2,
+    "name": "Green Recruit",
+    "description": "A targeted Spear Phishing campaign exploiting HR themes, new employee recruitment, and benefits updates to steal credentials.",
+    "dir": "ltr",
+    "has_reference_image": false
+  },
+  {
+    "id": 3,
+    "name": "Silver Shadow",
+    "description": "Sophisticated operations involving the use of Cobalt Strike for lateral movement and C2 communications within corporate networks.",
+    "dir": "ltr",
+    "has_reference_image": false
+  },
+  {
+    "id": 4,
+    "name": "Urgent Wire",
+    "description": "A Business Email Compromise (BEC) scam attempting to defraud finance departments via urgent wire transfer requests from spoofed executives.",
+    "dir": "ltr",
+    "has_reference_image": false
+  },
+  {
+    "id": 5,
+    "name": "Cloud Drain",
+    "description": "Large-scale credential harvesting targeting cloud services like Office 365, Firebase, and S3 through fake landing pages and MFA bypass attempts.",
+    "dir": "ltr",
+    "has_reference_image": false
+  },
+  {
+    "id": 6,
+    "name": "Bit Snatcher",
+    "description": "Distribution of Infostealers and RATs aimed at exfiltrating browser passwords, crypto wallets, and local sensitive files.",
+    "dir": "ltr",
+    "has_reference_image": false
+  },
+  {
+    "id": 7,
+    "name": "Vocal Proxy",
+    "description": "Aggressive scanning and reconnaissance campaign targeting exposed RDP, SSH, and Redis services to build a proxy network or botnet.",
+    "dir": "ltr",
+    "has_reference_image": false
+  },
+  {
+    "id": 8,
+    "name": "Vulnerable Echo",
+    "description": "Exploitation of known N-Day vulnerabilities, such as Log4j and Exchange flaws, for remote code execution on unpatched systems.",
+    "dir": "ltr",
+    "has_reference_image": false
+  },
+  {
+    "id": 9,
+    "name": "Fake Gate 9",
+    "description": "Focuses on injecting Webshells and Backdoor scripts into vulnerable servers, specifically targeting WordPress and K8s environments.",
+    "dir": "ltr",
+    "has_reference_image": false
+  },
+  {
+    "id": 10,
+    "name": "Green Recruit 10",
+    "description": "A targeted Spear Phishing campaign exploiting HR themes, new employee recruitment, and benefits updates to steal credentials.",
+    "dir": "ltr",
+    "has_reference_image": false
+  },
+  {
+    "id": 11,
+    "name": "Silver Shadow 11",
+    "description": "Sophisticated operations involving the use of Cobalt Strike for lateral movement and C2 communications within corporate networks.",
+    "dir": "ltr",
+    "has_reference_image": false
+  },
+  {
+    "id": 12,
+    "name": "Urgent Wire 12",
+    "description": "A Business Email Compromise (BEC) scam attempting to defraud finance departments via urgent wire transfer requests from spoofed executives.",
+    "dir": "ltr",
+    "has_reference_image": false
+  },
+  {
+    "id": 13,
+    "name": "Cloud Drain 13",
+    "description": "Large-scale credential harvesting targeting cloud services like Office 365, Firebase, and S3 through fake landing pages and MFA bypass attempts.",
+    "dir": "ltr",
+    "has_reference_image": false
+  },
+  {
+    "id": 14,
+    "name": "Bit Snatcher 14",
+    "description": "Distribution of Infostealers and RATs aimed at exfiltrating browser passwords, crypto wallets, and local sensitive files.",
+    "dir": "ltr",
+    "has_reference_image": false
+  },
+  {
+    "id": 15,
+    "name": "Vocal Proxy 15",
+    "description": "Aggressive scanning and reconnaissance campaign targeting exposed RDP, SSH, and Redis services to build a proxy network or botnet.",
+    "dir": "ltr",
+    "has_reference_image": false
+  },
+  {
+    "id": 16,
+    "name": "Vulnerable Echo 16",
+    "description": "Exploitation of known N-Day vulnerabilities, such as Log4j and Exchange flaws, for remote code execution on unpatched systems.",
+    "dir": "ltr",
+    "has_reference_image": false
+  },
+  {
+    "id": 17,
+    "name": "Fake Gate 17",
+    "description": "Focuses on injecting Webshells and Backdoor scripts into vulnerable servers, specifically targeting WordPress and K8s environments.",
+    "dir": "ltr",
+    "has_reference_image": false
+  },
+  {
+    "id": 18,
+    "name": "Green Recruit 18",
+    "description": "A targeted Spear Phishing campaign exploiting HR themes, new employee recruitment, and benefits updates to steal credentials.",
+    "dir": "ltr",
+    "has_reference_image": false
+  },
+  {
+    "id": 19,
+    "name": "Silver Shadow 19",
+    "description": "Sophisticated operations involving the use of Cobalt Strike for lateral movement and C2 communications within corporate networks.",
+    "dir": "ltr",
+    "has_reference_image": false
+  },
+  {
+    "id": 20,
+    "name": "Urgent Wire 20",
+    "description": "A Business Email Compromise (BEC) scam attempting to defraud finance departments via urgent wire transfer requests from spoofed executives.",
+    "dir": "ltr",
+    "has_reference_image": false
+  }
+]

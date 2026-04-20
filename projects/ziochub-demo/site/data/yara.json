@@ -1,0 +1,42 @@
+[
+  {
+    "filename": "Atomic_Stealer.yar",
+    "display_name": "Atomic_Stealer.yar",
+    "analyst": "yaelb",
+    "uploaded_at": "2026-04-20T10:35:01Z",
+    "status": "approved",
+    "ticket_id": "",
+    "comment": "Demo YARA rule",
+    "campaign_id": 11
+  },
+  {
+    "filename": "AuroraStealer.yar",
+    "display_name": "AuroraStealer.yar",
+    "analyst": "eitang",
+    "uploaded_at": "2026-04-20T10:35:01Z",
+    "status": "approved",
+    "ticket_id": "",
+    "comment": "Demo YARA rule",
+    "campaign_id": 5
+  },
+  {
+    "filename": "Aurora_March_2023.yar",
+    "display_name": "Aurora_March_2023.yar",
+    "analyst": "idom",
+    "uploaded_at": "2026-04-20T10:35:01Z",
+    "status": "approved",
+    "ticket_id": "",
+    "comment": "Demo YARA rule",
+    "campaign_id": 13
+  },
+  {
+    "filename": "danabot_yara.yar",
+    "display_name": "danabot_yara.yar",
+    "analyst": "shirac",
+    "uploaded_at": "2026-04-20T10:35:01Z",
+    "status": "approved",
+    "ticket_id": "",
+    "comment": "Demo YARA rule",
+    "campaign_id": 2
+  }
+]

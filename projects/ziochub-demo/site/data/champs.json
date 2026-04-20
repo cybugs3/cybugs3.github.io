@@ -1,0 +1,6087 @@
+{
+  "leaderboard": [
+    {
+      "user_id": 4,
+      "username": "michalm",
+      "display_name": "Michal Malka",
+      "analyst": "michalm",
+      "role_description": "Malware Analyst",
+      "avatar_url": "./assets/avatars/michalm.jpg",
+      "is_active": true,
+      "score": 2675,
+      "rank": 1,
+      "medal": "🥇",
+      "trend": "—",
+      "total_iocs": 211,
+      "yara_count": 0,
+      "deletion_count": 0,
+      "streak_days": 30,
+      "badges": [
+        "team_player",
+        "campaign_master",
+        "on_fire"
+      ],
+      "level": 6,
+      "xp_in_level": 175,
+      "level_width": 500,
+      "xp_to_next": 325,
+      "activity_per_day": [
+        {
+          "date": "2026-03-22",
+          "points": 14
+        },
+        {
+          "date": "2026-03-23",
+          "points": 20
+        },
+        {
+          "date": "2026-03-24",
+          "points": 12
+        },
+        {
+          "date": "2026-03-25",
+          "points": 20
+        },
+        {
+          "date": "2026-03-26",
+          "points": 18
+        },
+        {
+          "date": "2026-03-27",
+          "points": 9
+        },
+        {
+          "date": "2026-03-28",
+          "points": 44
+        },
+        {
+          "date": "2026-03-29",
+          "points": 13
+        },
+        {
+          "date": "2026-03-30",
+          "points": 14
+        },
+        {
+          "date": "2026-03-31",
+          "points": 22
+        },
+        {
+          "date": "2026-04-01",
+          "points": 20
+        },
+        {
+          "date": "2026-04-02",
+          "points": 18
+        },
+        {
+          "date": "2026-04-03",
+          "points": 8
+        },
+        {
+          "date": "2026-04-04",
+          "points": 50
+        },
+        {
+          "date": "2026-04-05",
+          "points": 12
+        },
+        {
+          "date": "2026-04-06",
+          "points": 14
+        },
+        {
+          "date": "2026-04-07",
+          "points": 22
+        },
+        {
+          "date": "2026-04-08",
+          "points": 20
+        },
+        {
+          "date": "2026-04-09",
+          "points": 18
+        },
+        {
+          "date": "2026-04-10",
+          "points": 17
+        },
+        {
+          "date": "2026-04-11",
+          "points": 38
+        },
+        {
+          "date": "2026-04-12",
+          "points": 11
+        },
+        {
+          "date": "2026-04-13",
+          "points": 14
+        },
+        {
+          "date": "2026-04-14",
+          "points": 22
+        },
+        {
+          "date": "2026-04-15",
+          "points": 20
+        },
+        {
+          "date": "2026-04-16",
+          "points": 18
+        },
+        {
+          "date": "2026-04-17",
+          "points": 16
+        },
+        {
+          "date": "2026-04-18",
+          "points": 44
+        },
+        {
+          "date": "2026-04-19",
+          "points": 10
+        },
+        {
+          "date": "2026-04-20",
+          "points": 24
+        }
+      ],
+      "team_avg_per_day": [
+        {
+          "date": "2026-03-22",
+          "points": 9
+        },
+        {
+          "date": "2026-03-23",
+          "points": 12
+        },
+        {
+          "date": "2026-03-24",
+          "points": 7
+        },
+        {
+          "date": "2026-03-25",
+          "points": 12
+        },
+        {
+          "date": "2026-03-26",
+          "points": 11
+        },
+        {
+          "date": "2026-03-27",
+          "points": 6
+        },
+        {
+          "date": "2026-03-28",
+          "points": 27
+        },
+        {
+          "date": "2026-03-29",
+          "points": 8
+        },
+        {
+          "date": "2026-03-30",
+          "points": 9
+        },
+        {
+          "date": "2026-03-31",
+          "points": 14
+        },
+        {
+          "date": "2026-04-01",
+          "points": 12
+        },
+        {
+          "date": "2026-04-02",
+          "points": 11
+        },
+        {
+          "date": "2026-04-03",
+          "points": 5
+        },
+        {
+          "date": "2026-04-04",
+          "points": 31
+        },
+        {
+          "date": "2026-04-05",
+          "points": 7
+        },
+        {
+          "date": "2026-04-06",
+          "points": 9
+        },
+        {
+          "date": "2026-04-07",
+          "points": 14
+        },
+        {
+          "date": "2026-04-08",
+          "points": 12
+        },
+        {
+          "date": "2026-04-09",
+          "points": 11
+        },
+        {
+          "date": "2026-04-10",
+          "points": 11
+        },
+        {
+          "date": "2026-04-11",
+          "points": 24
+        },
+        {
+          "date": "2026-04-12",
+          "points": 7
+        },
+        {
+          "date": "2026-04-13",
+          "points": 9
+        },
+        {
+          "date": "2026-04-14",
+          "points": 14
+        },
+        {
+          "date": "2026-04-15",
+          "points": 12
+        },
+        {
+          "date": "2026-04-16",
+          "points": 11
+        },
+        {
+          "date": "2026-04-17",
+          "points": 10
+        },
+        {
+          "date": "2026-04-18",
+          "points": 27
+        },
+        {
+          "date": "2026-04-19",
+          "points": 6
+        },
+        {
+          "date": "2026-04-20",
+          "points": 15
+        }
+      ],
+      "activity_points_pattern": [
+        14,
+        20,
+        12,
+        20,
+        18,
+        9,
+        44,
+        13,
+        14,
+        22,
+        20,
+        18,
+        8,
+        50,
+        12,
+        14,
+        22,
+        20,
+        18,
+        17,
+        38,
+        11,
+        14,
+        22,
+        20,
+        18,
+        16,
+        44,
+        10,
+        24
+      ],
+      "team_avg_points_pattern": [
+        9,
+        12,
+        7,
+        12,
+        11,
+        6,
+        27,
+        8,
+        9,
+        14,
+        12,
+        11,
+        5,
+        31,
+        7,
+        9,
+        14,
+        12,
+        11,
+        11,
+        24,
+        7,
+        9,
+        14,
+        12,
+        11,
+        10,
+        27,
+        6,
+        15
+      ],
+      "misp_per_day": []
+    },
+    {
+      "user_id": 8,
+      "username": "yaelb",
+      "display_name": "Yael Bitton",
+      "analyst": "yaelb",
+      "role_description": "Threat Intelligence Analyst",
+      "avatar_url": "./assets/avatars/yaelb.jpg",
+      "is_active": true,
+      "score": 2035,
+      "rank": 2,
+      "medal": "🥈",
+      "trend": "—",
+      "total_iocs": 158,
+      "yara_count": 1,
+      "deletion_count": 0,
+      "streak_days": 30,
+      "badges": [
+        "team_player",
+        "campaign_master",
+        "yara_rookie",
+        "on_fire"
+      ],
+      "level": 5,
+      "xp_in_level": 35,
+      "level_width": 500,
+      "xp_to_next": 465,
+      "activity_per_day": [
+        {
+          "date": "2026-03-22",
+          "points": 14
+        },
+        {
+          "date": "2026-03-23",
+          "points": 30
+        },
+        {
+          "date": "2026-03-24",
+          "points": 22
+        },
+        {
+          "date": "2026-03-25",
+          "points": 20
+        },
+        {
+          "date": "2026-03-26",
+          "points": 28
+        },
+        {
+          "date": "2026-03-27",
+          "points": 19
+        },
+        {
+          "date": "2026-03-28",
+          "points": 44
+        },
+        {
+          "date": "2026-03-29",
+          "points": 23
+        },
+        {
+          "date": "2026-03-30",
+          "points": 24
+        },
+        {
+          "date": "2026-03-31",
+          "points": 22
+        },
+        {
+          "date": "2026-04-01",
+          "points": 20
+        },
+        {
+          "date": "2026-04-02",
+          "points": 28
+        },
+        {
+          "date": "2026-04-03",
+          "points": 18
+        },
+        {
+          "date": "2026-04-04",
+          "points": 50
+        },
+        {
+          "date": "2026-04-05",
+          "points": 22
+        },
+        {
+          "date": "2026-04-06",
+          "points": 24
+        },
+        {
+          "date": "2026-04-07",
+          "points": 22
+        },
+        {
+          "date": "2026-04-08",
+          "points": 30
+        },
+        {
+          "date": "2026-04-09",
+          "points": 28
+        },
+        {
+          "date": "2026-04-10",
+          "points": 17
+        },
+        {
+          "date": "2026-04-11",
+          "points": 38
+        },
+        {
+          "date": "2026-04-12",
+          "points": 21
+        },
+        {
+          "date": "2026-04-13",
+          "points": 24
+        },
+        {
+          "date": "2026-04-14",
+          "points": 22
+        },
+        {
+          "date": "2026-04-15",
+          "points": 30
+        },
+        {
+          "date": "2026-04-16",
+          "points": 28
+        },
+        {
+          "date": "2026-04-17",
+          "points": 16
+        },
+        {
+          "date": "2026-04-18",
+          "points": 54
+        },
+        {
+          "date": "2026-04-19",
+          "points": 20
+        },
+        {
+          "date": "2026-04-20",
+          "points": 24
+        }
+      ],
+      "team_avg_per_day": [
+        {
+          "date": "2026-03-22",
+          "points": 9
+        },
+        {
+          "date": "2026-03-23",
+          "points": 19
+        },
+        {
+          "date": "2026-03-24",
+          "points": 14
+        },
+        {
+          "date": "2026-03-25",
+          "points": 12
+        },
+        {
+          "date": "2026-03-26",
+          "points": 17
+        },
+        {
+          "date": "2026-03-27",
+          "points": 12
+        },
+        {
+          "date": "2026-03-28",
+          "points": 27
+        },
+        {
+          "date": "2026-03-29",
+          "points": 14
+        },
+        {
+          "date": "2026-03-30",
+          "points": 15
+        },
+        {
+          "date": "2026-03-31",
+          "points": 14
+        },
+        {
+          "date": "2026-04-01",
+          "points": 12
+        },
+        {
+          "date": "2026-04-02",
+          "points": 17
+        },
+        {
+          "date": "2026-04-03",
+          "points": 11
+        },
+        {
+          "date": "2026-04-04",
+          "points": 31
+        },
+        {
+          "date": "2026-04-05",
+          "points": 14
+        },
+        {
+          "date": "2026-04-06",
+          "points": 15
+        },
+        {
+          "date": "2026-04-07",
+          "points": 14
+        },
+        {
+          "date": "2026-04-08",
+          "points": 19
+        },
+        {
+          "date": "2026-04-09",
+          "points": 17
+        },
+        {
+          "date": "2026-04-10",
+          "points": 11
+        },
+        {
+          "date": "2026-04-11",
+          "points": 24
+        },
+        {
+          "date": "2026-04-12",
+          "points": 13
+        },
+        {
+          "date": "2026-04-13",
+          "points": 15
+        },
+        {
+          "date": "2026-04-14",
+          "points": 14
+        },
+        {
+          "date": "2026-04-15",
+          "points": 19
+        },
+        {
+          "date": "2026-04-16",
+          "points": 17
+        },
+        {
+          "date": "2026-04-17",
+          "points": 10
+        },
+        {
+          "date": "2026-04-18",
+          "points": 33
+        },
+        {
+          "date": "2026-04-19",
+          "points": 12
+        },
+        {
+          "date": "2026-04-20",
+          "points": 15
+        }
+      ],
+      "activity_points_pattern": [
+        14,
+        30,
+        22,
+        20,
+        28,
+        19,
+        44,
+        23,
+        24,
+        22,
+        20,
+        28,
+        18,
+        50,
+        22,
+        24,
+        22,
+        30,
+        28,
+        17,
+        38,
+        21,
+        24,
+        22,
+        30,
+        28,
+        16,
+        54,
+        20,
+        24
+      ],
+      "team_avg_points_pattern": [
+        9,
+        19,
+        14,
+        12,
+        17,
+        12,
+        27,
+        14,
+        15,
+        14,
+        12,
+        17,
+        11,
+        31,
+        14,
+        15,
+        14,
+        19,
+        17,
+        11,
+        24,
+        13,
+        15,
+        14,
+        19,
+        17,
+        10,
+        33,
+        12,
+        15
+      ],
+      "misp_per_day": []
+    },
+    {
+      "user_id": 6,
+      "username": "nira",
+      "display_name": "Nir Avraham",
+      "analyst": "nira",
+      "role_description": "Vulnerability Management Specialist",
+      "avatar_url": "./assets/avatars/nira.jpg",
+      "is_active": true,
+      "score": 1765,
+      "rank": 3,
+      "medal": "🥉",
+      "trend": "—",
+      "total_iocs": 136,
+      "yara_count": 0,
+      "deletion_count": 0,
+      "streak_days": 30,
+      "badges": [
+        "team_player",
+        "campaign_master",
+        "on_fire"
+      ],
+      "level": 4,
+      "xp_in_level": 265,
+      "level_width": 500,
+      "xp_to_next": 235,
+      "activity_per_day": [
+        {
+          "date": "2026-03-22",
+          "points": 9
+        },
+        {
+          "date": "2026-03-23",
+          "points": 22
+        },
+        {
+          "date": "2026-03-24",
+          "points": 20
+        },
+        {
+          "date": "2026-03-25",
+          "points": 18
+        },
+        {
+          "date": "2026-03-26",
+          "points": 26
+        },
+        {
+          "date": "2026-03-27",
+          "points": 14
+        },
+        {
+          "date": "2026-03-28",
+          "points": 30
+        },
+        {
+          "date": "2026-03-29",
+          "points": 8
+        },
+        {
+          "date": "2026-03-30",
+          "points": 22
+        },
+        {
+          "date": "2026-03-31",
+          "points": 20
+        },
+        {
+          "date": "2026-04-01",
+          "points": 18
+        },
+        {
+          "date": "2026-04-02",
+          "points": 20
+        },
+        {
+          "date": "2026-04-03",
+          "points": 13
+        },
+        {
+          "date": "2026-04-04",
+          "points": 36
+        },
+        {
+          "date": "2026-04-05",
+          "points": 17
+        },
+        {
+          "date": "2026-04-06",
+          "points": 22
+        },
+        {
+          "date": "2026-04-07",
+          "points": 20
+        },
+        {
+          "date": "2026-04-08",
+          "points": 12
+        },
+        {
+          "date": "2026-04-09",
+          "points": 20
+        },
+        {
+          "date": "2026-04-10",
+          "points": 12
+        },
+        {
+          "date": "2026-04-11",
+          "points": 42
+        },
+        {
+          "date": "2026-04-12",
+          "points": 16
+        },
+        {
+          "date": "2026-04-13",
+          "points": 22
+        },
+        {
+          "date": "2026-04-14",
+          "points": 14
+        },
+        {
+          "date": "2026-04-15",
+          "points": 22
+        },
+        {
+          "date": "2026-04-16",
+          "points": 20
+        },
+        {
+          "date": "2026-04-17",
+          "points": 11
+        },
+        {
+          "date": "2026-04-18",
+          "points": 30
+        },
+        {
+          "date": "2026-04-19",
+          "points": 15
+        },
+        {
+          "date": "2026-04-20",
+          "points": 16
+        }
+      ],
+      "team_avg_per_day": [
+        {
+          "date": "2026-03-22",
+          "points": 6
+        },
+        {
+          "date": "2026-03-23",
+          "points": 14
+        },
+        {
+          "date": "2026-03-24",
+          "points": 12
+        },
+        {
+          "date": "2026-03-25",
+          "points": 11
+        },
+        {
+          "date": "2026-03-26",
+          "points": 16
+        },
+        {
+          "date": "2026-03-27",
+          "points": 9
+        },
+        {
+          "date": "2026-03-28",
+          "points": 19
+        },
+        {
+          "date": "2026-03-29",
+          "points": 5
+        },
+        {
+          "date": "2026-03-30",
+          "points": 14
+        },
+        {
+          "date": "2026-03-31",
+          "points": 12
+        },
+        {
+          "date": "2026-04-01",
+          "points": 11
+        },
+        {
+          "date": "2026-04-02",
+          "points": 12
+        },
+        {
+          "date": "2026-04-03",
+          "points": 8
+        },
+        {
+          "date": "2026-04-04",
+          "points": 22
+        },
+        {
+          "date": "2026-04-05",
+          "points": 11
+        },
+        {
+          "date": "2026-04-06",
+          "points": 14
+        },
+        {
+          "date": "2026-04-07",
+          "points": 12
+        },
+        {
+          "date": "2026-04-08",
+          "points": 7
+        },
+        {
+          "date": "2026-04-09",
+          "points": 12
+        },
+        {
+          "date": "2026-04-10",
+          "points": 7
+        },
+        {
+          "date": "2026-04-11",
+          "points": 26
+        },
+        {
+          "date": "2026-04-12",
+          "points": 10
+        },
+        {
+          "date": "2026-04-13",
+          "points": 14
+        },
+        {
+          "date": "2026-04-14",
+          "points": 9
+        },
+        {
+          "date": "2026-04-15",
+          "points": 14
+        },
+        {
+          "date": "2026-04-16",
+          "points": 12
+        },
+        {
+          "date": "2026-04-17",
+          "points": 7
+        },
+        {
+          "date": "2026-04-18",
+          "points": 19
+        },
+        {
+          "date": "2026-04-19",
+          "points": 9
+        },
+        {
+          "date": "2026-04-20",
+          "points": 10
+        }
+      ],
+      "activity_points_pattern": [
+        9,
+        22,
+        20,
+        18,
+        26,
+        14,
+        30,
+        8,
+        22,
+        20,
+        18,
+        20,
+        13,
+        36,
+        17,
+        22,
+        20,
+        12,
+        20,
+        12,
+        42,
+        16,
+        22,
+        14,
+        22,
+        20,
+        11,
+        30,
+        15,
+        16
+      ],
+      "team_avg_points_pattern": [
+        6,
+        14,
+        12,
+        11,
+        16,
+        9,
+        19,
+        5,
+        14,
+        12,
+        11,
+        12,
+        8,
+        22,
+        11,
+        14,
+        12,
+        7,
+        12,
+        7,
+        26,
+        10,
+        14,
+        9,
+        14,
+        12,
+        7,
+        19,
+        9,
+        10
+      ],
+      "misp_per_day": []
+    },
+    {
+      "user_id": 2,
+      "username": "idom",
+      "display_name": "Ido Mizrahi",
+      "analyst": "idom",
+      "role_description": "Security Analyst Tier 2",
+      "avatar_url": "./assets/avatars/idom.jpg",
+      "is_active": true,
+      "score": 1670,
+      "rank": 4,
+      "medal": "",
+      "trend": "—",
+      "total_iocs": 127,
+      "yara_count": 1,
+      "deletion_count": 0,
+      "streak_days": 30,
+      "badges": [
+        "team_player",
+        "campaign_master",
+        "yara_rookie",
+        "on_fire"
+      ],
+      "level": 4,
+      "xp_in_level": 170,
+      "level_width": 500,
+      "xp_to_next": 330,
+      "activity_per_day": [
+        {
+          "date": "2026-03-22",
+          "points": 13
+        },
+        {
+          "date": "2026-03-23",
+          "points": 16
+        },
+        {
+          "date": "2026-03-24",
+          "points": 24
+        },
+        {
+          "date": "2026-03-25",
+          "points": 22
+        },
+        {
+          "date": "2026-03-26",
+          "points": 20
+        },
+        {
+          "date": "2026-03-27",
+          "points": 8
+        },
+        {
+          "date": "2026-03-28",
+          "points": 46
+        },
+        {
+          "date": "2026-03-29",
+          "points": 12
+        },
+        {
+          "date": "2026-03-30",
+          "points": 16
+        },
+        {
+          "date": "2026-03-31",
+          "points": 24
+        },
+        {
+          "date": "2026-04-01",
+          "points": 22
+        },
+        {
+          "date": "2026-04-02",
+          "points": 14
+        },
+        {
+          "date": "2026-04-03",
+          "points": 17
+        },
+        {
+          "date": "2026-04-04",
+          "points": 34
+        },
+        {
+          "date": "2026-04-05",
+          "points": 11
+        },
+        {
+          "date": "2026-04-06",
+          "points": 16
+        },
+        {
+          "date": "2026-04-07",
+          "points": 24
+        },
+        {
+          "date": "2026-04-08",
+          "points": 16
+        },
+        {
+          "date": "2026-04-09",
+          "points": 14
+        },
+        {
+          "date": "2026-04-10",
+          "points": 16
+        },
+        {
+          "date": "2026-04-11",
+          "points": 40
+        },
+        {
+          "date": "2026-04-12",
+          "points": 10
+        },
+        {
+          "date": "2026-04-13",
+          "points": 26
+        },
+        {
+          "date": "2026-04-14",
+          "points": 18
+        },
+        {
+          "date": "2026-04-15",
+          "points": 16
+        },
+        {
+          "date": "2026-04-16",
+          "points": 14
+        },
+        {
+          "date": "2026-04-17",
+          "points": 15
+        },
+        {
+          "date": "2026-04-18",
+          "points": 46
+        },
+        {
+          "date": "2026-04-19",
+          "points": 9
+        },
+        {
+          "date": "2026-04-20",
+          "points": 20
+        }
+      ],
+      "team_avg_per_day": [
+        {
+          "date": "2026-03-22",
+          "points": 8
+        },
+        {
+          "date": "2026-03-23",
+          "points": 10
+        },
+        {
+          "date": "2026-03-24",
+          "points": 15
+        },
+        {
+          "date": "2026-03-25",
+          "points": 14
+        },
+        {
+          "date": "2026-03-26",
+          "points": 12
+        },
+        {
+          "date": "2026-03-27",
+          "points": 5
+        },
+        {
+          "date": "2026-03-28",
+          "points": 29
+        },
+        {
+          "date": "2026-03-29",
+          "points": 7
+        },
+        {
+          "date": "2026-03-30",
+          "points": 10
+        },
+        {
+          "date": "2026-03-31",
+          "points": 15
+        },
+        {
+          "date": "2026-04-01",
+          "points": 14
+        },
+        {
+          "date": "2026-04-02",
+          "points": 9
+        },
+        {
+          "date": "2026-04-03",
+          "points": 11
+        },
+        {
+          "date": "2026-04-04",
+          "points": 21
+        },
+        {
+          "date": "2026-04-05",
+          "points": 7
+        },
+        {
+          "date": "2026-04-06",
+          "points": 10
+        },
+        {
+          "date": "2026-04-07",
+          "points": 15
+        },
+        {
+          "date": "2026-04-08",
+          "points": 10
+        },
+        {
+          "date": "2026-04-09",
+          "points": 9
+        },
+        {
+          "date": "2026-04-10",
+          "points": 10
+        },
+        {
+          "date": "2026-04-11",
+          "points": 25
+        },
+        {
+          "date": "2026-04-12",
+          "points": 6
+        },
+        {
+          "date": "2026-04-13",
+          "points": 16
+        },
+        {
+          "date": "2026-04-14",
+          "points": 11
+        },
+        {
+          "date": "2026-04-15",
+          "points": 10
+        },
+        {
+          "date": "2026-04-16",
+          "points": 9
+        },
+        {
+          "date": "2026-04-17",
+          "points": 9
+        },
+        {
+          "date": "2026-04-18",
+          "points": 29
+        },
+        {
+          "date": "2026-04-19",
+          "points": 6
+        },
+        {
+          "date": "2026-04-20",
+          "points": 12
+        }
+      ],
+      "activity_points_pattern": [
+        13,
+        16,
+        24,
+        22,
+        20,
+        8,
+        46,
+        12,
+        16,
+        24,
+        22,
+        14,
+        17,
+        34,
+        11,
+        16,
+        24,
+        16,
+        14,
+        16,
+        40,
+        10,
+        26,
+        18,
+        16,
+        14,
+        15,
+        46,
+        9,
+        20
+      ],
+      "team_avg_points_pattern": [
+        8,
+        10,
+        15,
+        14,
+        12,
+        5,
+        29,
+        7,
+        10,
+        15,
+        14,
+        9,
+        11,
+        21,
+        7,
+        10,
+        15,
+        10,
+        9,
+        10,
+        25,
+        6,
+        16,
+        11,
+        10,
+        9,
+        9,
+        29,
+        6,
+        12
+      ],
+      "misp_per_day": []
+    },
+    {
+      "user_id": 3,
+      "username": "shirac",
+      "display_name": "Shira Cohen",
+      "analyst": "shirac",
+      "role_description": "Senior Incident Responder Tier 3",
+      "avatar_url": "./assets/avatars/shirac.jpg",
+      "is_active": true,
+      "score": 1660,
+      "rank": 5,
+      "medal": "",
+      "trend": "—",
+      "total_iocs": 127,
+      "yara_count": 1,
+      "deletion_count": 0,
+      "streak_days": 30,
+      "badges": [
+        "team_player",
+        "campaign_master",
+        "yara_rookie",
+        "on_fire"
+      ],
+      "level": 4,
+      "xp_in_level": 160,
+      "level_width": 500,
+      "xp_to_next": 340,
+      "activity_per_day": [
+        {
+          "date": "2026-03-22",
+          "points": 12
+        },
+        {
+          "date": "2026-03-23",
+          "points": 16
+        },
+        {
+          "date": "2026-03-24",
+          "points": 24
+        },
+        {
+          "date": "2026-03-25",
+          "points": 22
+        },
+        {
+          "date": "2026-03-26",
+          "points": 14
+        },
+        {
+          "date": "2026-03-27",
+          "points": 17
+        },
+        {
+          "date": "2026-03-28",
+          "points": 46
+        },
+        {
+          "date": "2026-03-29",
+          "points": 11
+        },
+        {
+          "date": "2026-03-30",
+          "points": 16
+        },
+        {
+          "date": "2026-03-31",
+          "points": 24
+        },
+        {
+          "date": "2026-04-01",
+          "points": 16
+        },
+        {
+          "date": "2026-04-02",
+          "points": 14
+        },
+        {
+          "date": "2026-04-03",
+          "points": 16
+        },
+        {
+          "date": "2026-04-04",
+          "points": 34
+        },
+        {
+          "date": "2026-04-05",
+          "points": 10
+        },
+        {
+          "date": "2026-04-06",
+          "points": 26
+        },
+        {
+          "date": "2026-04-07",
+          "points": 18
+        },
+        {
+          "date": "2026-04-08",
+          "points": 16
+        },
+        {
+          "date": "2026-04-09",
+          "points": 14
+        },
+        {
+          "date": "2026-04-10",
+          "points": 15
+        },
+        {
+          "date": "2026-04-11",
+          "points": 40
+        },
+        {
+          "date": "2026-04-12",
+          "points": 9
+        },
+        {
+          "date": "2026-04-13",
+          "points": 20
+        },
+        {
+          "date": "2026-04-14",
+          "points": 18
+        },
+        {
+          "date": "2026-04-15",
+          "points": 16
+        },
+        {
+          "date": "2026-04-16",
+          "points": 24
+        },
+        {
+          "date": "2026-04-17",
+          "points": 14
+        },
+        {
+          "date": "2026-04-18",
+          "points": 46
+        },
+        {
+          "date": "2026-04-19",
+          "points": 8
+        },
+        {
+          "date": "2026-04-20",
+          "points": 20
+        }
+      ],
+      "team_avg_per_day": [
+        {
+          "date": "2026-03-22",
+          "points": 7
+        },
+        {
+          "date": "2026-03-23",
+          "points": 10
+        },
+        {
+          "date": "2026-03-24",
+          "points": 15
+        },
+        {
+          "date": "2026-03-25",
+          "points": 14
+        },
+        {
+          "date": "2026-03-26",
+          "points": 9
+        },
+        {
+          "date": "2026-03-27",
+          "points": 11
+        },
+        {
+          "date": "2026-03-28",
+          "points": 29
+        },
+        {
+          "date": "2026-03-29",
+          "points": 7
+        },
+        {
+          "date": "2026-03-30",
+          "points": 10
+        },
+        {
+          "date": "2026-03-31",
+          "points": 15
+        },
+        {
+          "date": "2026-04-01",
+          "points": 10
+        },
+        {
+          "date": "2026-04-02",
+          "points": 9
+        },
+        {
+          "date": "2026-04-03",
+          "points": 10
+        },
+        {
+          "date": "2026-04-04",
+          "points": 21
+        },
+        {
+          "date": "2026-04-05",
+          "points": 6
+        },
+        {
+          "date": "2026-04-06",
+          "points": 16
+        },
+        {
+          "date": "2026-04-07",
+          "points": 11
+        },
+        {
+          "date": "2026-04-08",
+          "points": 10
+        },
+        {
+          "date": "2026-04-09",
+          "points": 9
+        },
+        {
+          "date": "2026-04-10",
+          "points": 9
+        },
+        {
+          "date": "2026-04-11",
+          "points": 25
+        },
+        {
+          "date": "2026-04-12",
+          "points": 6
+        },
+        {
+          "date": "2026-04-13",
+          "points": 12
+        },
+        {
+          "date": "2026-04-14",
+          "points": 11
+        },
+        {
+          "date": "2026-04-15",
+          "points": 10
+        },
+        {
+          "date": "2026-04-16",
+          "points": 15
+        },
+        {
+          "date": "2026-04-17",
+          "points": 9
+        },
+        {
+          "date": "2026-04-18",
+          "points": 29
+        },
+        {
+          "date": "2026-04-19",
+          "points": 5
+        },
+        {
+          "date": "2026-04-20",
+          "points": 12
+        }
+      ],
+      "activity_points_pattern": [
+        12,
+        16,
+        24,
+        22,
+        14,
+        17,
+        46,
+        11,
+        16,
+        24,
+        16,
+        14,
+        16,
+        34,
+        10,
+        26,
+        18,
+        16,
+        14,
+        15,
+        40,
+        9,
+        20,
+        18,
+        16,
+        24,
+        14,
+        46,
+        8,
+        20
+      ],
+      "team_avg_points_pattern": [
+        7,
+        10,
+        15,
+        14,
+        9,
+        11,
+        29,
+        7,
+        10,
+        15,
+        10,
+        9,
+        10,
+        21,
+        6,
+        16,
+        11,
+        10,
+        9,
+        9,
+        25,
+        6,
+        12,
+        11,
+        10,
+        15,
+        9,
+        29,
+        5,
+        12
+      ],
+      "misp_per_day": []
+    },
+    {
+      "user_id": 1,
+      "username": "eitang",
+      "display_name": "Eitan Golan",
+      "analyst": "eitang",
+      "role_description": "Security Analyst Tier 1",
+      "avatar_url": "./assets/avatars/eitang.jpg",
+      "is_active": true,
+      "score": 1565,
+      "rank": 6,
+      "medal": "",
+      "trend": "—",
+      "total_iocs": 120,
+      "yara_count": 1,
+      "deletion_count": 0,
+      "streak_days": 30,
+      "badges": [
+        "team_player",
+        "campaign_master",
+        "yara_rookie",
+        "on_fire"
+      ],
+      "level": 4,
+      "xp_in_level": 65,
+      "level_width": 500,
+      "xp_to_next": 435,
+      "activity_per_day": [
+        {
+          "date": "2026-03-22",
+          "points": 15
+        },
+        {
+          "date": "2026-03-23",
+          "points": 18
+        },
+        {
+          "date": "2026-03-24",
+          "points": 16
+        },
+        {
+          "date": "2026-03-25",
+          "points": 24
+        },
+        {
+          "date": "2026-03-26",
+          "points": 22
+        },
+        {
+          "date": "2026-03-27",
+          "points": 10
+        },
+        {
+          "date": "2026-03-28",
+          "points": 42
+        },
+        {
+          "date": "2026-03-29",
+          "points": 14
+        },
+        {
+          "date": "2026-03-30",
+          "points": 18
+        },
+        {
+          "date": "2026-03-31",
+          "points": 16
+        },
+        {
+          "date": "2026-04-01",
+          "points": 24
+        },
+        {
+          "date": "2026-04-02",
+          "points": 16
+        },
+        {
+          "date": "2026-04-03",
+          "points": 9
+        },
+        {
+          "date": "2026-04-04",
+          "points": 48
+        },
+        {
+          "date": "2026-04-05",
+          "points": 13
+        },
+        {
+          "date": "2026-04-06",
+          "points": 18
+        },
+        {
+          "date": "2026-04-07",
+          "points": 26
+        },
+        {
+          "date": "2026-04-08",
+          "points": 18
+        },
+        {
+          "date": "2026-04-09",
+          "points": 16
+        },
+        {
+          "date": "2026-04-10",
+          "points": 8
+        },
+        {
+          "date": "2026-04-11",
+          "points": 36
+        },
+        {
+          "date": "2026-04-12",
+          "points": 12
+        },
+        {
+          "date": "2026-04-13",
+          "points": 18
+        },
+        {
+          "date": "2026-04-14",
+          "points": 20
+        },
+        {
+          "date": "2026-04-15",
+          "points": 18
+        },
+        {
+          "date": "2026-04-16",
+          "points": 16
+        },
+        {
+          "date": "2026-04-17",
+          "points": 17
+        },
+        {
+          "date": "2026-04-18",
+          "points": 42
+        },
+        {
+          "date": "2026-04-19",
+          "points": 11
+        },
+        {
+          "date": "2026-04-20",
+          "points": 12
+        }
+      ],
+      "team_avg_per_day": [
+        {
+          "date": "2026-03-22",
+          "points": 9
+        },
+        {
+          "date": "2026-03-23",
+          "points": 11
+        },
+        {
+          "date": "2026-03-24",
+          "points": 10
+        },
+        {
+          "date": "2026-03-25",
+          "points": 15
+        },
+        {
+          "date": "2026-03-26",
+          "points": 14
+        },
+        {
+          "date": "2026-03-27",
+          "points": 6
+        },
+        {
+          "date": "2026-03-28",
+          "points": 26
+        },
+        {
+          "date": "2026-03-29",
+          "points": 9
+        },
+        {
+          "date": "2026-03-30",
+          "points": 11
+        },
+        {
+          "date": "2026-03-31",
+          "points": 10
+        },
+        {
+          "date": "2026-04-01",
+          "points": 15
+        },
+        {
+          "date": "2026-04-02",
+          "points": 10
+        },
+        {
+          "date": "2026-04-03",
+          "points": 6
+        },
+        {
+          "date": "2026-04-04",
+          "points": 30
+        },
+        {
+          "date": "2026-04-05",
+          "points": 8
+        },
+        {
+          "date": "2026-04-06",
+          "points": 11
+        },
+        {
+          "date": "2026-04-07",
+          "points": 16
+        },
+        {
+          "date": "2026-04-08",
+          "points": 11
+        },
+        {
+          "date": "2026-04-09",
+          "points": 10
+        },
+        {
+          "date": "2026-04-10",
+          "points": 5
+        },
+        {
+          "date": "2026-04-11",
+          "points": 22
+        },
+        {
+          "date": "2026-04-12",
+          "points": 7
+        },
+        {
+          "date": "2026-04-13",
+          "points": 11
+        },
+        {
+          "date": "2026-04-14",
+          "points": 12
+        },
+        {
+          "date": "2026-04-15",
+          "points": 11
+        },
+        {
+          "date": "2026-04-16",
+          "points": 10
+        },
+        {
+          "date": "2026-04-17",
+          "points": 11
+        },
+        {
+          "date": "2026-04-18",
+          "points": 26
+        },
+        {
+          "date": "2026-04-19",
+          "points": 7
+        },
+        {
+          "date": "2026-04-20",
+          "points": 7
+        }
+      ],
+      "activity_points_pattern": [
+        15,
+        18,
+        16,
+        24,
+        22,
+        10,
+        42,
+        14,
+        18,
+        16,
+        24,
+        16,
+        9,
+        48,
+        13,
+        18,
+        26,
+        18,
+        16,
+        8,
+        36,
+        12,
+        18,
+        20,
+        18,
+        16,
+        17,
+        42,
+        11,
+        12
+      ],
+      "team_avg_points_pattern": [
+        9,
+        11,
+        10,
+        15,
+        14,
+        6,
+        26,
+        9,
+        11,
+        10,
+        15,
+        10,
+        6,
+        30,
+        8,
+        11,
+        16,
+        11,
+        10,
+        5,
+        22,
+        7,
+        11,
+        12,
+        11,
+        10,
+        11,
+        26,
+        7,
+        7
+      ],
+      "misp_per_day": []
+    },
+    {
+      "user_id": 7,
+      "username": "omers",
+      "display_name": "Omer Shapira",
+      "analyst": "omers",
+      "role_description": "SOC Automation Engineer",
+      "avatar_url": "./assets/avatars/omers.jpg",
+      "is_active": true,
+      "score": 1495,
+      "rank": 7,
+      "medal": "",
+      "trend": "—",
+      "total_iocs": 116,
+      "yara_count": 0,
+      "deletion_count": 0,
+      "streak_days": 30,
+      "badges": [
+        "team_player",
+        "campaign_master",
+        "on_fire"
+      ],
+      "level": 3,
+      "xp_in_level": 495,
+      "level_width": 500,
+      "xp_to_next": 5,
+      "activity_per_day": [
+        {
+          "date": "2026-03-22",
+          "points": 13
+        },
+        {
+          "date": "2026-03-23",
+          "points": 14
+        },
+        {
+          "date": "2026-03-24",
+          "points": 22
+        },
+        {
+          "date": "2026-03-25",
+          "points": 20
+        },
+        {
+          "date": "2026-03-26",
+          "points": 18
+        },
+        {
+          "date": "2026-03-27",
+          "points": 8
+        },
+        {
+          "date": "2026-03-28",
+          "points": 50
+        },
+        {
+          "date": "2026-03-29",
+          "points": 12
+        },
+        {
+          "date": "2026-03-30",
+          "points": 14
+        },
+        {
+          "date": "2026-03-31",
+          "points": 22
+        },
+        {
+          "date": "2026-04-01",
+          "points": 20
+        },
+        {
+          "date": "2026-04-02",
+          "points": 18
+        },
+        {
+          "date": "2026-04-03",
+          "points": 17
+        },
+        {
+          "date": "2026-04-04",
+          "points": 38
+        },
+        {
+          "date": "2026-04-05",
+          "points": 11
+        },
+        {
+          "date": "2026-04-06",
+          "points": 14
+        },
+        {
+          "date": "2026-04-07",
+          "points": 22
+        },
+        {
+          "date": "2026-04-08",
+          "points": 20
+        },
+        {
+          "date": "2026-04-09",
+          "points": 18
+        },
+        {
+          "date": "2026-04-10",
+          "points": 16
+        },
+        {
+          "date": "2026-04-11",
+          "points": 44
+        },
+        {
+          "date": "2026-04-12",
+          "points": 10
+        },
+        {
+          "date": "2026-04-13",
+          "points": 24
+        },
+        {
+          "date": "2026-04-14",
+          "points": 22
+        },
+        {
+          "date": "2026-04-15",
+          "points": 20
+        },
+        {
+          "date": "2026-04-16",
+          "points": 12
+        },
+        {
+          "date": "2026-04-17",
+          "points": 15
+        },
+        {
+          "date": "2026-04-18",
+          "points": 32
+        },
+        {
+          "date": "2026-04-19",
+          "points": 9
+        },
+        {
+          "date": "2026-04-20",
+          "points": 24
+        }
+      ],
+      "team_avg_per_day": [
+        {
+          "date": "2026-03-22",
+          "points": 8
+        },
+        {
+          "date": "2026-03-23",
+          "points": 9
+        },
+        {
+          "date": "2026-03-24",
+          "points": 14
+        },
+        {
+          "date": "2026-03-25",
+          "points": 12
+        },
+        {
+          "date": "2026-03-26",
+          "points": 11
+        },
+        {
+          "date": "2026-03-27",
+          "points": 5
+        },
+        {
+          "date": "2026-03-28",
+          "points": 31
+        },
+        {
+          "date": "2026-03-29",
+          "points": 7
+        },
+        {
+          "date": "2026-03-30",
+          "points": 9
+        },
+        {
+          "date": "2026-03-31",
+          "points": 14
+        },
+        {
+          "date": "2026-04-01",
+          "points": 12
+        },
+        {
+          "date": "2026-04-02",
+          "points": 11
+        },
+        {
+          "date": "2026-04-03",
+          "points": 11
+        },
+        {
+          "date": "2026-04-04",
+          "points": 24
+        },
+        {
+          "date": "2026-04-05",
+          "points": 7
+        },
+        {
+          "date": "2026-04-06",
+          "points": 9
+        },
+        {
+          "date": "2026-04-07",
+          "points": 14
+        },
+        {
+          "date": "2026-04-08",
+          "points": 12
+        },
+        {
+          "date": "2026-04-09",
+          "points": 11
+        },
+        {
+          "date": "2026-04-10",
+          "points": 10
+        },
+        {
+          "date": "2026-04-11",
+          "points": 27
+        },
+        {
+          "date": "2026-04-12",
+          "points": 6
+        },
+        {
+          "date": "2026-04-13",
+          "points": 15
+        },
+        {
+          "date": "2026-04-14",
+          "points": 14
+        },
+        {
+          "date": "2026-04-15",
+          "points": 12
+        },
+        {
+          "date": "2026-04-16",
+          "points": 7
+        },
+        {
+          "date": "2026-04-17",
+          "points": 9
+        },
+        {
+          "date": "2026-04-18",
+          "points": 20
+        },
+        {
+          "date": "2026-04-19",
+          "points": 6
+        },
+        {
+          "date": "2026-04-20",
+          "points": 15
+        }
+      ],
+      "activity_points_pattern": [
+        13,
+        14,
+        22,
+        20,
+        18,
+        8,
+        50,
+        12,
+        14,
+        22,
+        20,
+        18,
+        17,
+        38,
+        11,
+        14,
+        22,
+        20,
+        18,
+        16,
+        44,
+        10,
+        24,
+        22,
+        20,
+        12,
+        15,
+        32,
+        9,
+        24
+      ],
+      "team_avg_points_pattern": [
+        8,
+        9,
+        14,
+        12,
+        11,
+        5,
+        31,
+        7,
+        9,
+        14,
+        12,
+        11,
+        11,
+        24,
+        7,
+        9,
+        14,
+        12,
+        11,
+        10,
+        27,
+        6,
+        15,
+        14,
+        12,
+        7,
+        9,
+        20,
+        6,
+        15
+      ],
+      "misp_per_day": []
+    },
+    {
+      "user_id": 5,
+      "username": "tamarf",
+      "display_name": "Tamar Friedman",
+      "analyst": "tamarf",
+      "role_description": "Security Analyst Tier 1",
+      "avatar_url": "./assets/avatars/tamarf.jpg",
+      "is_active": true,
+      "score": 1430,
+      "rank": 8,
+      "medal": "",
+      "trend": "—",
+      "total_iocs": 112,
+      "yara_count": 0,
+      "deletion_count": 0,
+      "streak_days": 30,
+      "badges": [
+        "team_player",
+        "campaign_master",
+        "on_fire"
+      ],
+      "level": 3,
+      "xp_in_level": 430,
+      "level_width": 500,
+      "xp_to_next": 70,
+      "activity_per_day": [
+        {
+          "date": "2026-03-22",
+          "points": 13
+        },
+        {
+          "date": "2026-03-23",
+          "points": 16
+        },
+        {
+          "date": "2026-03-24",
+          "points": 24
+        },
+        {
+          "date": "2026-03-25",
+          "points": 22
+        },
+        {
+          "date": "2026-03-26",
+          "points": 20
+        },
+        {
+          "date": "2026-03-27",
+          "points": 8
+        },
+        {
+          "date": "2026-03-28",
+          "points": 34
+        },
+        {
+          "date": "2026-03-29",
+          "points": 12
+        },
+        {
+          "date": "2026-03-30",
+          "points": 16
+        },
+        {
+          "date": "2026-03-31",
+          "points": 24
+        },
+        {
+          "date": "2026-04-01",
+          "points": 22
+        },
+        {
+          "date": "2026-04-02",
+          "points": 14
+        },
+        {
+          "date": "2026-04-03",
+          "points": 17
+        },
+        {
+          "date": "2026-04-04",
+          "points": 40
+        },
+        {
+          "date": "2026-04-05",
+          "points": 11
+        },
+        {
+          "date": "2026-04-06",
+          "points": 16
+        },
+        {
+          "date": "2026-04-07",
+          "points": 24
+        },
+        {
+          "date": "2026-04-08",
+          "points": 16
+        },
+        {
+          "date": "2026-04-09",
+          "points": 14
+        },
+        {
+          "date": "2026-04-10",
+          "points": 16
+        },
+        {
+          "date": "2026-04-11",
+          "points": 46
+        },
+        {
+          "date": "2026-04-12",
+          "points": 10
+        },
+        {
+          "date": "2026-04-13",
+          "points": 26
+        },
+        {
+          "date": "2026-04-14",
+          "points": 18
+        },
+        {
+          "date": "2026-04-15",
+          "points": 16
+        },
+        {
+          "date": "2026-04-16",
+          "points": 14
+        },
+        {
+          "date": "2026-04-17",
+          "points": 15
+        },
+        {
+          "date": "2026-04-18",
+          "points": 34
+        },
+        {
+          "date": "2026-04-19",
+          "points": 9
+        },
+        {
+          "date": "2026-04-20",
+          "points": 20
+        }
+      ],
+      "team_avg_per_day": [
+        {
+          "date": "2026-03-22",
+          "points": 8
+        },
+        {
+          "date": "2026-03-23",
+          "points": 10
+        },
+        {
+          "date": "2026-03-24",
+          "points": 15
+        },
+        {
+          "date": "2026-03-25",
+          "points": 14
+        },
+        {
+          "date": "2026-03-26",
+          "points": 12
+        },
+        {
+          "date": "2026-03-27",
+          "points": 5
+        },
+        {
+          "date": "2026-03-28",
+          "points": 21
+        },
+        {
+          "date": "2026-03-29",
+          "points": 7
+        },
+        {
+          "date": "2026-03-30",
+          "points": 10
+        },
+        {
+          "date": "2026-03-31",
+          "points": 15
+        },
+        {
+          "date": "2026-04-01",
+          "points": 14
+        },
+        {
+          "date": "2026-04-02",
+          "points": 9
+        },
+        {
+          "date": "2026-04-03",
+          "points": 11
+        },
+        {
+          "date": "2026-04-04",
+          "points": 25
+        },
+        {
+          "date": "2026-04-05",
+          "points": 7
+        },
+        {
+          "date": "2026-04-06",
+          "points": 10
+        },
+        {
+          "date": "2026-04-07",
+          "points": 15
+        },
+        {
+          "date": "2026-04-08",
+          "points": 10
+        },
+        {
+          "date": "2026-04-09",
+          "points": 9
+        },
+        {
+          "date": "2026-04-10",
+          "points": 10
+        },
+        {
+          "date": "2026-04-11",
+          "points": 29
+        },
+        {
+          "date": "2026-04-12",
+          "points": 6
+        },
+        {
+          "date": "2026-04-13",
+          "points": 16
+        },
+        {
+          "date": "2026-04-14",
+          "points": 11
+        },
+        {
+          "date": "2026-04-15",
+          "points": 10
+        },
+        {
+          "date": "2026-04-16",
+          "points": 9
+        },
+        {
+          "date": "2026-04-17",
+          "points": 9
+        },
+        {
+          "date": "2026-04-18",
+          "points": 21
+        },
+        {
+          "date": "2026-04-19",
+          "points": 6
+        },
+        {
+          "date": "2026-04-20",
+          "points": 12
+        }
+      ],
+      "activity_points_pattern": [
+        13,
+        16,
+        24,
+        22,
+        20,
+        8,
+        34,
+        12,
+        16,
+        24,
+        22,
+        14,
+        17,
+        40,
+        11,
+        16,
+        24,
+        16,
+        14,
+        16,
+        46,
+        10,
+        26,
+        18,
+        16,
+        14,
+        15,
+        34,
+        9,
+        20
+      ],
+      "team_avg_points_pattern": [
+        8,
+        10,
+        15,
+        14,
+        12,
+        5,
+        21,
+        7,
+        10,
+        15,
+        14,
+        9,
+        11,
+        25,
+        7,
+        10,
+        15,
+        10,
+        9,
+        10,
+        29,
+        6,
+        16,
+        11,
+        10,
+        9,
+        9,
+        21,
+        6,
+        12
+      ],
+      "misp_per_day": []
+    },
+    {
+      "user_id": 9,
+      "username": "oril",
+      "display_name": "Ori Levy",
+      "analyst": "oril",
+      "role_description": "SOC Manager",
+      "avatar_url": "./assets/avatars/oril.jpg",
+      "is_active": true,
+      "score": 1165,
+      "rank": 9,
+      "medal": "",
+      "trend": "—",
+      "total_iocs": 93,
+      "yara_count": 0,
+      "deletion_count": 0,
+      "streak_days": 30,
+      "badges": [
+        "team_player",
+        "campaign_master",
+        "on_fire"
+      ],
+      "level": 3,
+      "xp_in_level": 165,
+      "level_width": 500,
+      "xp_to_next": 335,
+      "activity_per_day": [
+        {
+          "date": "2026-03-22",
+          "points": 11
+        },
+        {
+          "date": "2026-03-23",
+          "points": 14
+        },
+        {
+          "date": "2026-03-24",
+          "points": 22
+        },
+        {
+          "date": "2026-03-25",
+          "points": 20
+        },
+        {
+          "date": "2026-03-26",
+          "points": 18
+        },
+        {
+          "date": "2026-03-27",
+          "points": 16
+        },
+        {
+          "date": "2026-03-28",
+          "points": 38
+        },
+        {
+          "date": "2026-03-29",
+          "points": 10
+        },
+        {
+          "date": "2026-03-30",
+          "points": 24
+        },
+        {
+          "date": "2026-03-31",
+          "points": 22
+        },
+        {
+          "date": "2026-04-01",
+          "points": 20
+        },
+        {
+          "date": "2026-04-02",
+          "points": 12
+        },
+        {
+          "date": "2026-04-03",
+          "points": 15
+        },
+        {
+          "date": "2026-04-04",
+          "points": 44
+        },
+        {
+          "date": "2026-04-05",
+          "points": 9
+        },
+        {
+          "date": "2026-04-06",
+          "points": 24
+        },
+        {
+          "date": "2026-04-07",
+          "points": 22
+        },
+        {
+          "date": "2026-04-08",
+          "points": 14
+        },
+        {
+          "date": "2026-04-09",
+          "points": 22
+        },
+        {
+          "date": "2026-04-10",
+          "points": 14
+        },
+        {
+          "date": "2026-04-11",
+          "points": 32
+        },
+        {
+          "date": "2026-04-12",
+          "points": 8
+        },
+        {
+          "date": "2026-04-13",
+          "points": 24
+        },
+        {
+          "date": "2026-04-14",
+          "points": 16
+        },
+        {
+          "date": "2026-04-15",
+          "points": 14
+        },
+        {
+          "date": "2026-04-16",
+          "points": 22
+        },
+        {
+          "date": "2026-04-17",
+          "points": 13
+        },
+        {
+          "date": "2026-04-18",
+          "points": 38
+        },
+        {
+          "date": "2026-04-19",
+          "points": 17
+        },
+        {
+          "date": "2026-04-20",
+          "points": 18
+        }
+      ],
+      "team_avg_per_day": [
+        {
+          "date": "2026-03-22",
+          "points": 7
+        },
+        {
+          "date": "2026-03-23",
+          "points": 9
+        },
+        {
+          "date": "2026-03-24",
+          "points": 14
+        },
+        {
+          "date": "2026-03-25",
+          "points": 12
+        },
+        {
+          "date": "2026-03-26",
+          "points": 11
+        },
+        {
+          "date": "2026-03-27",
+          "points": 10
+        },
+        {
+          "date": "2026-03-28",
+          "points": 24
+        },
+        {
+          "date": "2026-03-29",
+          "points": 6
+        },
+        {
+          "date": "2026-03-30",
+          "points": 15
+        },
+        {
+          "date": "2026-03-31",
+          "points": 14
+        },
+        {
+          "date": "2026-04-01",
+          "points": 12
+        },
+        {
+          "date": "2026-04-02",
+          "points": 7
+        },
+        {
+          "date": "2026-04-03",
+          "points": 9
+        },
+        {
+          "date": "2026-04-04",
+          "points": 27
+        },
+        {
+          "date": "2026-04-05",
+          "points": 6
+        },
+        {
+          "date": "2026-04-06",
+          "points": 15
+        },
+        {
+          "date": "2026-04-07",
+          "points": 14
+        },
+        {
+          "date": "2026-04-08",
+          "points": 9
+        },
+        {
+          "date": "2026-04-09",
+          "points": 14
+        },
+        {
+          "date": "2026-04-10",
+          "points": 9
+        },
+        {
+          "date": "2026-04-11",
+          "points": 20
+        },
+        {
+          "date": "2026-04-12",
+          "points": 5
+        },
+        {
+          "date": "2026-04-13",
+          "points": 15
+        },
+        {
+          "date": "2026-04-14",
+          "points": 10
+        },
+        {
+          "date": "2026-04-15",
+          "points": 9
+        },
+        {
+          "date": "2026-04-16",
+          "points": 14
+        },
+        {
+          "date": "2026-04-17",
+          "points": 8
+        },
+        {
+          "date": "2026-04-18",
+          "points": 24
+        },
+        {
+          "date": "2026-04-19",
+          "points": 11
+        },
+        {
+          "date": "2026-04-20",
+          "points": 11
+        }
+      ],
+      "activity_points_pattern": [
+        11,
+        14,
+        22,
+        20,
+        18,
+        16,
+        38,
+        10,
+        24,
+        22,
+        20,
+        12,
+        15,
+        44,
+        9,
+        24,
+        22,
+        14,
+        22,
+        14,
+        32,
+        8,
+        24,
+        16,
+        14,
+        22,
+        13,
+        38,
+        17,
+        18
+      ],
+      "team_avg_points_pattern": [
+        7,
+        9,
+        14,
+        12,
+        11,
+        10,
+        24,
+        6,
+        15,
+        14,
+        12,
+        7,
+        9,
+        27,
+        6,
+        15,
+        14,
+        9,
+        14,
+        9,
+        20,
+        5,
+        15,
+        10,
+        9,
+        14,
+        8,
+        24,
+        11,
+        11
+      ],
+      "misp_per_day": []
+    }
+  ],
+  "by_user_id": {
+    "1": {
+      "user_id": 1,
+      "username": "eitang",
+      "display_name": "Eitan Golan",
+      "analyst": "eitang",
+      "role_description": "Security Analyst Tier 1",
+      "avatar_url": "./assets/avatars/eitang.jpg",
+      "is_active": true,
+      "score": 1565,
+      "rank": 6,
+      "medal": "",
+      "trend": "—",
+      "total_iocs": 120,
+      "yara_count": 1,
+      "deletion_count": 0,
+      "streak_days": 30,
+      "badges": [
+        "team_player",
+        "campaign_master",
+        "yara_rookie",
+        "on_fire"
+      ],
+      "level": 4,
+      "xp_in_level": 65,
+      "level_width": 500,
+      "xp_to_next": 435,
+      "activity_per_day": [
+        {
+          "date": "2026-03-22",
+          "points": 15
+        },
+        {
+          "date": "2026-03-23",
+          "points": 18
+        },
+        {
+          "date": "2026-03-24",
+          "points": 16
+        },
+        {
+          "date": "2026-03-25",
+          "points": 24
+        },
+        {
+          "date": "2026-03-26",
+          "points": 22
+        },
+        {
+          "date": "2026-03-27",
+          "points": 10
+        },
+        {
+          "date": "2026-03-28",
+          "points": 42
+        },
+        {
+          "date": "2026-03-29",
+          "points": 14
+        },
+        {
+          "date": "2026-03-30",
+          "points": 18
+        },
+        {
+          "date": "2026-03-31",
+          "points": 16
+        },
+        {
+          "date": "2026-04-01",
+          "points": 24
+        },
+        {
+          "date": "2026-04-02",
+          "points": 16
+        },
+        {
+          "date": "2026-04-03",
+          "points": 9
+        },
+        {
+          "date": "2026-04-04",
+          "points": 48
+        },
+        {
+          "date": "2026-04-05",
+          "points": 13
+        },
+        {
+          "date": "2026-04-06",
+          "points": 18
+        },
+        {
+          "date": "2026-04-07",
+          "points": 26
+        },
+        {
+          "date": "2026-04-08",
+          "points": 18
+        },
+        {
+          "date": "2026-04-09",
+          "points": 16
+        },
+        {
+          "date": "2026-04-10",
+          "points": 8
+        },
+        {
+          "date": "2026-04-11",
+          "points": 36
+        },
+        {
+          "date": "2026-04-12",
+          "points": 12
+        },
+        {
+          "date": "2026-04-13",
+          "points": 18
+        },
+        {
+          "date": "2026-04-14",
+          "points": 20
+        },
+        {
+          "date": "2026-04-15",
+          "points": 18
+        },
+        {
+          "date": "2026-04-16",
+          "points": 16
+        },
+        {
+          "date": "2026-04-17",
+          "points": 17
+        },
+        {
+          "date": "2026-04-18",
+          "points": 42
+        },
+        {
+          "date": "2026-04-19",
+          "points": 11
+        },
+        {
+          "date": "2026-04-20",
+          "points": 12
+        }
+      ],
+      "team_avg_per_day": [
+        {
+          "date": "2026-03-22",
+          "points": 9
+        },
+        {
+          "date": "2026-03-23",
+          "points": 11
+        },
+        {
+          "date": "2026-03-24",
+          "points": 10
+        },
+        {
+          "date": "2026-03-25",
+          "points": 15
+        },
+        {
+          "date": "2026-03-26",
+          "points": 14
+        },
+        {
+          "date": "2026-03-27",
+          "points": 6
+        },
+        {
+          "date": "2026-03-28",
+          "points": 26
+        },
+        {
+          "date": "2026-03-29",
+          "points": 9
+        },
+        {
+          "date": "2026-03-30",
+          "points": 11
+        },
+        {
+          "date": "2026-03-31",
+          "points": 10
+        },
+        {
+          "date": "2026-04-01",
+          "points": 15
+        },
+        {
+          "date": "2026-04-02",
+          "points": 10
+        },
+        {
+          "date": "2026-04-03",
+          "points": 6
+        },
+        {
+          "date": "2026-04-04",
+          "points": 30
+        },
+        {
+          "date": "2026-04-05",
+          "points": 8
+        },
+        {
+          "date": "2026-04-06",
+          "points": 11
+        },
+        {
+          "date": "2026-04-07",
+          "points": 16
+        },
+        {
+          "date": "2026-04-08",
+          "points": 11
+        },
+        {
+          "date": "2026-04-09",
+          "points": 10
+        },
+        {
+          "date": "2026-04-10",
+          "points": 5
+        },
+        {
+          "date": "2026-04-11",
+          "points": 22
+        },
+        {
+          "date": "2026-04-12",
+          "points": 7
+        },
+        {
+          "date": "2026-04-13",
+          "points": 11
+        },
+        {
+          "date": "2026-04-14",
+          "points": 12
+        },
+        {
+          "date": "2026-04-15",
+          "points": 11
+        },
+        {
+          "date": "2026-04-16",
+          "points": 10
+        },
+        {
+          "date": "2026-04-17",
+          "points": 11
+        },
+        {
+          "date": "2026-04-18",
+          "points": 26
+        },
+        {
+          "date": "2026-04-19",
+          "points": 7
+        },
+        {
+          "date": "2026-04-20",
+          "points": 7
+        }
+      ],
+      "activity_points_pattern": [
+        15,
+        18,
+        16,
+        24,
+        22,
+        10,
+        42,
+        14,
+        18,
+        16,
+        24,
+        16,
+        9,
+        48,
+        13,
+        18,
+        26,
+        18,
+        16,
+        8,
+        36,
+        12,
+        18,
+        20,
+        18,
+        16,
+        17,
+        42,
+        11,
+        12
+      ],
+      "team_avg_points_pattern": [
+        9,
+        11,
+        10,
+        15,
+        14,
+        6,
+        26,
+        9,
+        11,
+        10,
+        15,
+        10,
+        6,
+        30,
+        8,
+        11,
+        16,
+        11,
+        10,
+        5,
+        22,
+        7,
+        11,
+        12,
+        11,
+        10,
+        11,
+        26,
+        7,
+        7
+      ],
+      "misp_per_day": []
+    },
+    "2": {
+      "user_id": 2,
+      "username": "idom",
+      "display_name": "Ido Mizrahi",
+      "analyst": "idom",
+      "role_description": "Security Analyst Tier 2",
+      "avatar_url": "./assets/avatars/idom.jpg",
+      "is_active": true,
+      "score": 1670,
+      "rank": 4,
+      "medal": "",
+      "trend": "—",
+      "total_iocs": 127,
+      "yara_count": 1,
+      "deletion_count": 0,
+      "streak_days": 30,
+      "badges": [
+        "team_player",
+        "campaign_master",
+        "yara_rookie",
+        "on_fire"
+      ],
+      "level": 4,
+      "xp_in_level": 170,
+      "level_width": 500,
+      "xp_to_next": 330,
+      "activity_per_day": [
+        {
+          "date": "2026-03-22",
+          "points": 13
+        },
+        {
+          "date": "2026-03-23",
+          "points": 16
+        },
+        {
+          "date": "2026-03-24",
+          "points": 24
+        },
+        {
+          "date": "2026-03-25",
+          "points": 22
+        },
+        {
+          "date": "2026-03-26",
+          "points": 20
+        },
+        {
+          "date": "2026-03-27",
+          "points": 8
+        },
+        {
+          "date": "2026-03-28",
+          "points": 46
+        },
+        {
+          "date": "2026-03-29",
+          "points": 12
+        },
+        {
+          "date": "2026-03-30",
+          "points": 16
+        },
+        {
+          "date": "2026-03-31",
+          "points": 24
+        },
+        {
+          "date": "2026-04-01",
+          "points": 22
+        },
+        {
+          "date": "2026-04-02",
+          "points": 14
+        },
+        {
+          "date": "2026-04-03",
+          "points": 17
+        },
+        {
+          "date": "2026-04-04",
+          "points": 34
+        },
+        {
+          "date": "2026-04-05",
+          "points": 11
+        },
+        {
+          "date": "2026-04-06",
+          "points": 16
+        },
+        {
+          "date": "2026-04-07",
+          "points": 24
+        },
+        {
+          "date": "2026-04-08",
+          "points": 16
+        },
+        {
+          "date": "2026-04-09",
+          "points": 14
+        },
+        {
+          "date": "2026-04-10",
+          "points": 16
+        },
+        {
+          "date": "2026-04-11",
+          "points": 40
+        },
+        {
+          "date": "2026-04-12",
+          "points": 10
+        },
+        {
+          "date": "2026-04-13",
+          "points": 26
+        },
+        {
+          "date": "2026-04-14",
+          "points": 18
+        },
+        {
+          "date": "2026-04-15",
+          "points": 16
+        },
+        {
+          "date": "2026-04-16",
+          "points": 14
+        },
+        {
+          "date": "2026-04-17",
+          "points": 15
+        },
+        {
+          "date": "2026-04-18",
+          "points": 46
+        },
+        {
+          "date": "2026-04-19",
+          "points": 9
+        },
+        {
+          "date": "2026-04-20",
+          "points": 20
+        }
+      ],
+      "team_avg_per_day": [
+        {
+          "date": "2026-03-22",
+          "points": 8
+        },
+        {
+          "date": "2026-03-23",
+          "points": 10
+        },
+        {
+          "date": "2026-03-24",
+          "points": 15
+        },
+        {
+          "date": "2026-03-25",
+          "points": 14
+        },
+        {
+          "date": "2026-03-26",
+          "points": 12
+        },
+        {
+          "date": "2026-03-27",
+          "points": 5
+        },
+        {
+          "date": "2026-03-28",
+          "points": 29
+        },
+        {
+          "date": "2026-03-29",
+          "points": 7
+        },
+        {
+          "date": "2026-03-30",
+          "points": 10
+        },
+        {
+          "date": "2026-03-31",
+          "points": 15
+        },
+        {
+          "date": "2026-04-01",
+          "points": 14
+        },
+        {
+          "date": "2026-04-02",
+          "points": 9
+        },
+        {
+          "date": "2026-04-03",
+          "points": 11
+        },
+        {
+          "date": "2026-04-04",
+          "points": 21
+        },
+        {
+          "date": "2026-04-05",
+          "points": 7
+        },
+        {
+          "date": "2026-04-06",
+          "points": 10
+        },
+        {
+          "date": "2026-04-07",
+          "points": 15
+        },
+        {
+          "date": "2026-04-08",
+          "points": 10
+        },
+        {
+          "date": "2026-04-09",
+          "points": 9
+        },
+        {
+          "date": "2026-04-10",
+          "points": 10
+        },
+        {
+          "date": "2026-04-11",
+          "points": 25
+        },
+        {
+          "date": "2026-04-12",
+          "points": 6
+        },
+        {
+          "date": "2026-04-13",
+          "points": 16
+        },
+        {
+          "date": "2026-04-14",
+          "points": 11
+        },
+        {
+          "date": "2026-04-15",
+          "points": 10
+        },
+        {
+          "date": "2026-04-16",
+          "points": 9
+        },
+        {
+          "date": "2026-04-17",
+          "points": 9
+        },
+        {
+          "date": "2026-04-18",
+          "points": 29
+        },
+        {
+          "date": "2026-04-19",
+          "points": 6
+        },
+        {
+          "date": "2026-04-20",
+          "points": 12
+        }
+      ],
+      "activity_points_pattern": [
+        13,
+        16,
+        24,
+        22,
+        20,
+        8,
+        46,
+        12,
+        16,
+        24,
+        22,
+        14,
+        17,
+        34,
+        11,
+        16,
+        24,
+        16,
+        14,
+        16,
+        40,
+        10,
+        26,
+        18,
+        16,
+        14,
+        15,
+        46,
+        9,
+        20
+      ],
+      "team_avg_points_pattern": [
+        8,
+        10,
+        15,
+        14,
+        12,
+        5,
+        29,
+        7,
+        10,
+        15,
+        14,
+        9,
+        11,
+        21,
+        7,
+        10,
+        15,
+        10,
+        9,
+        10,
+        25,
+        6,
+        16,
+        11,
+        10,
+        9,
+        9,
+        29,
+        6,
+        12
+      ],
+      "misp_per_day": []
+    },
+    "3": {
+      "user_id": 3,
+      "username": "shirac",
+      "display_name": "Shira Cohen",
+      "analyst": "shirac",
+      "role_description": "Senior Incident Responder Tier 3",
+      "avatar_url": "./assets/avatars/shirac.jpg",
+      "is_active": true,
+      "score": 1660,
+      "rank": 5,
+      "medal": "",
+      "trend": "—",
+      "total_iocs": 127,
+      "yara_count": 1,
+      "deletion_count": 0,
+      "streak_days": 30,
+      "badges": [
+        "team_player",
+        "campaign_master",
+        "yara_rookie",
+        "on_fire"
+      ],
+      "level": 4,
+      "xp_in_level": 160,
+      "level_width": 500,
+      "xp_to_next": 340,
+      "activity_per_day": [
+        {
+          "date": "2026-03-22",
+          "points": 12
+        },
+        {
+          "date": "2026-03-23",
+          "points": 16
+        },
+        {
+          "date": "2026-03-24",
+          "points": 24
+        },
+        {
+          "date": "2026-03-25",
+          "points": 22
+        },
+        {
+          "date": "2026-03-26",
+          "points": 14
+        },
+        {
+          "date": "2026-03-27",
+          "points": 17
+        },
+        {
+          "date": "2026-03-28",
+          "points": 46
+        },
+        {
+          "date": "2026-03-29",
+          "points": 11
+        },
+        {
+          "date": "2026-03-30",
+          "points": 16
+        },
+        {
+          "date": "2026-03-31",
+          "points": 24
+        },
+        {
+          "date": "2026-04-01",
+          "points": 16
+        },
+        {
+          "date": "2026-04-02",
+          "points": 14
+        },
+        {
+          "date": "2026-04-03",
+          "points": 16
+        },
+        {
+          "date": "2026-04-04",
+          "points": 34
+        },
+        {
+          "date": "2026-04-05",
+          "points": 10
+        },
+        {
+          "date": "2026-04-06",
+          "points": 26
+        },
+        {
+          "date": "2026-04-07",
+          "points": 18
+        },
+        {
+          "date": "2026-04-08",
+          "points": 16
+        },
+        {
+          "date": "2026-04-09",
+          "points": 14
+        },
+        {
+          "date": "2026-04-10",
+          "points": 15
+        },
+        {
+          "date": "2026-04-11",
+          "points": 40
+        },
+        {
+          "date": "2026-04-12",
+          "points": 9
+        },
+        {
+          "date": "2026-04-13",
+          "points": 20
+        },
+        {
+          "date": "2026-04-14",
+          "points": 18
+        },
+        {
+          "date": "2026-04-15",
+          "points": 16
+        },
+        {
+          "date": "2026-04-16",
+          "points": 24
+        },
+        {
+          "date": "2026-04-17",
+          "points": 14
+        },
+        {
+          "date": "2026-04-18",
+          "points": 46
+        },
+        {
+          "date": "2026-04-19",
+          "points": 8
+        },
+        {
+          "date": "2026-04-20",
+          "points": 20
+        }
+      ],
+      "team_avg_per_day": [
+        {
+          "date": "2026-03-22",
+          "points": 7
+        },
+        {
+          "date": "2026-03-23",
+          "points": 10
+        },
+        {
+          "date": "2026-03-24",
+          "points": 15
+        },
+        {
+          "date": "2026-03-25",
+          "points": 14
+        },
+        {
+          "date": "2026-03-26",
+          "points": 9
+        },
+        {
+          "date": "2026-03-27",
+          "points": 11
+        },
+        {
+          "date": "2026-03-28",
+          "points": 29
+        },
+        {
+          "date": "2026-03-29",
+          "points": 7
+        },
+        {
+          "date": "2026-03-30",
+          "points": 10
+        },
+        {
+          "date": "2026-03-31",
+          "points": 15
+        },
+        {
+          "date": "2026-04-01",
+          "points": 10
+        },
+        {
+          "date": "2026-04-02",
+          "points": 9
+        },
+        {
+          "date": "2026-04-03",
+          "points": 10
+        },
+        {
+          "date": "2026-04-04",
+          "points": 21
+        },
+        {
+          "date": "2026-04-05",
+          "points": 6
+        },
+        {
+          "date": "2026-04-06",
+          "points": 16
+        },
+        {
+          "date": "2026-04-07",
+          "points": 11
+        },
+        {
+          "date": "2026-04-08",
+          "points": 10
+        },
+        {
+          "date": "2026-04-09",
+          "points": 9
+        },
+        {
+          "date": "2026-04-10",
+          "points": 9
+        },
+        {
+          "date": "2026-04-11",
+          "points": 25
+        },
+        {
+          "date": "2026-04-12",
+          "points": 6
+        },
+        {
+          "date": "2026-04-13",
+          "points": 12
+        },
+        {
+          "date": "2026-04-14",
+          "points": 11
+        },
+        {
+          "date": "2026-04-15",
+          "points": 10
+        },
+        {
+          "date": "2026-04-16",
+          "points": 15
+        },
+        {
+          "date": "2026-04-17",
+          "points": 9
+        },
+        {
+          "date": "2026-04-18",
+          "points": 29
+        },
+        {
+          "date": "2026-04-19",
+          "points": 5
+        },
+        {
+          "date": "2026-04-20",
+          "points": 12
+        }
+      ],
+      "activity_points_pattern": [
+        12,
+        16,
+        24,
+        22,
+        14,
+        17,
+        46,
+        11,
+        16,
+        24,
+        16,
+        14,
+        16,
+        34,
+        10,
+        26,
+        18,
+        16,
+        14,
+        15,
+        40,
+        9,
+        20,
+        18,
+        16,
+        24,
+        14,
+        46,
+        8,
+        20
+      ],
+      "team_avg_points_pattern": [
+        7,
+        10,
+        15,
+        14,
+        9,
+        11,
+        29,
+        7,
+        10,
+        15,
+        10,
+        9,
+        10,
+        21,
+        6,
+        16,
+        11,
+        10,
+        9,
+        9,
+        25,
+        6,
+        12,
+        11,
+        10,
+        15,
+        9,
+        29,
+        5,
+        12
+      ],
+      "misp_per_day": []
+    },
+    "4": {
+      "user_id": 4,
+      "username": "michalm",
+      "display_name": "Michal Malka",
+      "analyst": "michalm",
+      "role_description": "Malware Analyst",
+      "avatar_url": "./assets/avatars/michalm.jpg",
+      "is_active": true,
+      "score": 2675,
+      "rank": 1,
+      "medal": "🥇",
+      "trend": "—",
+      "total_iocs": 211,
+      "yara_count": 0,
+      "deletion_count": 0,
+      "streak_days": 30,
+      "badges": [
+        "team_player",
+        "campaign_master",
+        "on_fire"
+      ],
+      "level": 6,
+      "xp_in_level": 175,
+      "level_width": 500,
+      "xp_to_next": 325,
+      "activity_per_day": [
+        {
+          "date": "2026-03-22",
+          "points": 14
+        },
+        {
+          "date": "2026-03-23",
+          "points": 20
+        },
+        {
+          "date": "2026-03-24",
+          "points": 12
+        },
+        {
+          "date": "2026-03-25",
+          "points": 20
+        },
+        {
+          "date": "2026-03-26",
+          "points": 18
+        },
+        {
+          "date": "2026-03-27",
+          "points": 9
+        },
+        {
+          "date": "2026-03-28",
+          "points": 44
+        },
+        {
+          "date": "2026-03-29",
+          "points": 13
+        },
+        {
+          "date": "2026-03-30",
+          "points": 14
+        },
+        {
+          "date": "2026-03-31",
+          "points": 22
+        },
+        {
+          "date": "2026-04-01",
+          "points": 20
+        },
+        {
+          "date": "2026-04-02",
+          "points": 18
+        },
+        {
+          "date": "2026-04-03",
+          "points": 8
+        },
+        {
+          "date": "2026-04-04",
+          "points": 50
+        },
+        {
+          "date": "2026-04-05",
+          "points": 12
+        },
+        {
+          "date": "2026-04-06",
+          "points": 14
+        },
+        {
+          "date": "2026-04-07",
+          "points": 22
+        },
+        {
+          "date": "2026-04-08",
+          "points": 20
+        },
+        {
+          "date": "2026-04-09",
+          "points": 18
+        },
+        {
+          "date": "2026-04-10",
+          "points": 17
+        },
+        {
+          "date": "2026-04-11",
+          "points": 38
+        },
+        {
+          "date": "2026-04-12",
+          "points": 11
+        },
+        {
+          "date": "2026-04-13",
+          "points": 14
+        },
+        {
+          "date": "2026-04-14",
+          "points": 22
+        },
+        {
+          "date": "2026-04-15",
+          "points": 20
+        },
+        {
+          "date": "2026-04-16",
+          "points": 18
+        },
+        {
+          "date": "2026-04-17",
+          "points": 16
+        },
+        {
+          "date": "2026-04-18",
+          "points": 44
+        },
+        {
+          "date": "2026-04-19",
+          "points": 10
+        },
+        {
+          "date": "2026-04-20",
+          "points": 24
+        }
+      ],
+      "team_avg_per_day": [
+        {
+          "date": "2026-03-22",
+          "points": 9
+        },
+        {
+          "date": "2026-03-23",
+          "points": 12
+        },
+        {
+          "date": "2026-03-24",
+          "points": 7
+        },
+        {
+          "date": "2026-03-25",
+          "points": 12
+        },
+        {
+          "date": "2026-03-26",
+          "points": 11
+        },
+        {
+          "date": "2026-03-27",
+          "points": 6
+        },
+        {
+          "date": "2026-03-28",
+          "points": 27
+        },
+        {
+          "date": "2026-03-29",
+          "points": 8
+        },
+        {
+          "date": "2026-03-30",
+          "points": 9
+        },
+        {
+          "date": "2026-03-31",
+          "points": 14
+        },
+        {
+          "date": "2026-04-01",
+          "points": 12
+        },
+        {
+          "date": "2026-04-02",
+          "points": 11
+        },
+        {
+          "date": "2026-04-03",
+          "points": 5
+        },
+        {
+          "date": "2026-04-04",
+          "points": 31
+        },
+        {
+          "date": "2026-04-05",
+          "points": 7
+        },
+        {
+          "date": "2026-04-06",
+          "points": 9
+        },
+        {
+          "date": "2026-04-07",
+          "points": 14
+        },
+        {
+          "date": "2026-04-08",
+          "points": 12
+        },
+        {
+          "date": "2026-04-09",
+          "points": 11
+        },
+        {
+          "date": "2026-04-10",
+          "points": 11
+        },
+        {
+          "date": "2026-04-11",
+          "points": 24
+        },
+        {
+          "date": "2026-04-12",
+          "points": 7
+        },
+        {
+          "date": "2026-04-13",
+          "points": 9
+        },
+        {
+          "date": "2026-04-14",
+          "points": 14
+        },
+        {
+          "date": "2026-04-15",
+          "points": 12
+        },
+        {
+          "date": "2026-04-16",
+          "points": 11
+        },
+        {
+          "date": "2026-04-17",
+          "points": 10
+        },
+        {
+          "date": "2026-04-18",
+          "points": 27
+        },
+        {
+          "date": "2026-04-19",
+          "points": 6
+        },
+        {
+          "date": "2026-04-20",
+          "points": 15
+        }
+      ],
+      "activity_points_pattern": [
+        14,
+        20,
+        12,
+        20,
+        18,
+        9,
+        44,
+        13,
+        14,
+        22,
+        20,
+        18,
+        8,
+        50,
+        12,
+        14,
+        22,
+        20,
+        18,
+        17,
+        38,
+        11,
+        14,
+        22,
+        20,
+        18,
+        16,
+        44,
+        10,
+        24
+      ],
+      "team_avg_points_pattern": [
+        9,
+        12,
+        7,
+        12,
+        11,
+        6,
+        27,
+        8,
+        9,
+        14,
+        12,
+        11,
+        5,
+        31,
+        7,
+        9,
+        14,
+        12,
+        11,
+        11,
+        24,
+        7,
+        9,
+        14,
+        12,
+        11,
+        10,
+        27,
+        6,
+        15
+      ],
+      "misp_per_day": []
+    },
+    "5": {
+      "user_id": 5,
+      "username": "tamarf",
+      "display_name": "Tamar Friedman",
+      "analyst": "tamarf",
+      "role_description": "Security Analyst Tier 1",
+      "avatar_url": "./assets/avatars/tamarf.jpg",
+      "is_active": true,
+      "score": 1430,
+      "rank": 8,
+      "medal": "",
+      "trend": "—",
+      "total_iocs": 112,
+      "yara_count": 0,
+      "deletion_count": 0,
+      "streak_days": 30,
+      "badges": [
+        "team_player",
+        "campaign_master",
+        "on_fire"
+      ],
+      "level": 3,
+      "xp_in_level": 430,
+      "level_width": 500,
+      "xp_to_next": 70,
+      "activity_per_day": [
+        {
+          "date": "2026-03-22",
+          "points": 13
+        },
+        {
+          "date": "2026-03-23",
+          "points": 16
+        },
+        {
+          "date": "2026-03-24",
+          "points": 24
+        },
+        {
+          "date": "2026-03-25",
+          "points": 22
+        },
+        {
+          "date": "2026-03-26",
+          "points": 20
+        },
+        {
+          "date": "2026-03-27",
+          "points": 8
+        },
+        {
+          "date": "2026-03-28",
+          "points": 34
+        },
+        {
+          "date": "2026-03-29",
+          "points": 12
+        },
+        {
+          "date": "2026-03-30",
+          "points": 16
+        },
+        {
+          "date": "2026-03-31",
+          "points": 24
+        },
+        {
+          "date": "2026-04-01",
+          "points": 22
+        },
+        {
+          "date": "2026-04-02",
+          "points": 14
+        },
+        {
+          "date": "2026-04-03",
+          "points": 17
+        },
+        {
+          "date": "2026-04-04",
+          "points": 40
+        },
+        {
+          "date": "2026-04-05",
+          "points": 11
+        },
+        {
+          "date": "2026-04-06",
+          "points": 16
+        },
+        {
+          "date": "2026-04-07",
+          "points": 24
+        },
+        {
+          "date": "2026-04-08",
+          "points": 16
+        },
+        {
+          "date": "2026-04-09",
+          "points": 14
+        },
+        {
+          "date": "2026-04-10",
+          "points": 16
+        },
+        {
+          "date": "2026-04-11",
+          "points": 46
+        },
+        {
+          "date": "2026-04-12",
+          "points": 10
+        },
+        {
+          "date": "2026-04-13",
+          "points": 26
+        },
+        {
+          "date": "2026-04-14",
+          "points": 18
+        },
+        {
+          "date": "2026-04-15",
+          "points": 16
+        },
+        {
+          "date": "2026-04-16",
+          "points": 14
+        },
+        {
+          "date": "2026-04-17",
+          "points": 15
+        },
+        {
+          "date": "2026-04-18",
+          "points": 34
+        },
+        {
+          "date": "2026-04-19",
+          "points": 9
+        },
+        {
+          "date": "2026-04-20",
+          "points": 20
+        }
+      ],
+      "team_avg_per_day": [
+        {
+          "date": "2026-03-22",
+          "points": 8
+        },
+        {
+          "date": "2026-03-23",
+          "points": 10
+        },
+        {
+          "date": "2026-03-24",
+          "points": 15
+        },
+        {
+          "date": "2026-03-25",
+          "points": 14
+        },
+        {
+          "date": "2026-03-26",
+          "points": 12
+        },
+        {
+          "date": "2026-03-27",
+          "points": 5
+        },
+        {
+          "date": "2026-03-28",
+          "points": 21
+        },
+        {
+          "date": "2026-03-29",
+          "points": 7
+        },
+        {
+          "date": "2026-03-30",
+          "points": 10
+        },
+        {
+          "date": "2026-03-31",
+          "points": 15
+        },
+        {
+          "date": "2026-04-01",
+          "points": 14
+        },
+        {
+          "date": "2026-04-02",
+          "points": 9
+        },
+        {
+          "date": "2026-04-03",
+          "points": 11
+        },
+        {
+          "date": "2026-04-04",
+          "points": 25
+        },
+        {
+          "date": "2026-04-05",
+          "points": 7
+        },
+        {
+          "date": "2026-04-06",
+          "points": 10
+        },
+        {
+          "date": "2026-04-07",
+          "points": 15
+        },
+        {
+          "date": "2026-04-08",
+          "points": 10
+        },
+        {
+          "date": "2026-04-09",
+          "points": 9
+        },
+        {
+          "date": "2026-04-10",
+          "points": 10
+        },
+        {
+          "date": "2026-04-11",
+          "points": 29
+        },
+        {
+          "date": "2026-04-12",
+          "points": 6
+        },
+        {
+          "date": "2026-04-13",
+          "points": 16
+        },
+        {
+          "date": "2026-04-14",
+          "points": 11
+        },
+        {
+          "date": "2026-04-15",
+          "points": 10
+        },
+        {
+          "date": "2026-04-16",
+          "points": 9
+        },
+        {
+          "date": "2026-04-17",
+          "points": 9
+        },
+        {
+          "date": "2026-04-18",
+          "points": 21
+        },
+        {
+          "date": "2026-04-19",
+          "points": 6
+        },
+        {
+          "date": "2026-04-20",
+          "points": 12
+        }
+      ],
+      "activity_points_pattern": [
+        13,
+        16,
+        24,
+        22,
+        20,
+        8,
+        34,
+        12,
+        16,
+        24,
+        22,
+        14,
+        17,
+        40,
+        11,
+        16,
+        24,
+        16,
+        14,
+        16,
+        46,
+        10,
+        26,
+        18,
+        16,
+        14,
+        15,
+        34,
+        9,
+        20
+      ],
+      "team_avg_points_pattern": [
+        8,
+        10,
+        15,
+        14,
+        12,
+        5,
+        21,
+        7,
+        10,
+        15,
+        14,
+        9,
+        11,
+        25,
+        7,
+        10,
+        15,
+        10,
+        9,
+        10,
+        29,
+        6,
+        16,
+        11,
+        10,
+        9,
+        9,
+        21,
+        6,
+        12
+      ],
+      "misp_per_day": []
+    },
+    "6": {
+      "user_id": 6,
+      "username": "nira",
+      "display_name": "Nir Avraham",
+      "analyst": "nira",
+      "role_description": "Vulnerability Management Specialist",
+      "avatar_url": "./assets/avatars/nira.jpg",
+      "is_active": true,
+      "score": 1765,
+      "rank": 3,
+      "medal": "🥉",
+      "trend": "—",
+      "total_iocs": 136,
+      "yara_count": 0,
+      "deletion_count": 0,
+      "streak_days": 30,
+      "badges": [
+        "team_player",
+        "campaign_master",
+        "on_fire"
+      ],
+      "level": 4,
+      "xp_in_level": 265,
+      "level_width": 500,
+      "xp_to_next": 235,
+      "activity_per_day": [
+        {
+          "date": "2026-03-22",
+          "points": 9
+        },
+        {
+          "date": "2026-03-23",
+          "points": 22
+        },
+        {
+          "date": "2026-03-24",
+          "points": 20
+        },
+        {
+          "date": "2026-03-25",
+          "points": 18
+        },
+        {
+          "date": "2026-03-26",
+          "points": 26
+        },
+        {
+          "date": "2026-03-27",
+          "points": 14
+        },
+        {
+          "date": "2026-03-28",
+          "points": 30
+        },
+        {
+          "date": "2026-03-29",
+          "points": 8
+        },
+        {
+          "date": "2026-03-30",
+          "points": 22
+        },
+        {
+          "date": "2026-03-31",
+          "points": 20
+        },
+        {
+          "date": "2026-04-01",
+          "points": 18
+        },
+        {
+          "date": "2026-04-02",
+          "points": 20
+        },
+        {
+          "date": "2026-04-03",
+          "points": 13
+        },
+        {
+          "date": "2026-04-04",
+          "points": 36
+        },
+        {
+          "date": "2026-04-05",
+          "points": 17
+        },
+        {
+          "date": "2026-04-06",
+          "points": 22
+        },
+        {
+          "date": "2026-04-07",
+          "points": 20
+        },
+        {
+          "date": "2026-04-08",
+          "points": 12
+        },
+        {
+          "date": "2026-04-09",
+          "points": 20
+        },
+        {
+          "date": "2026-04-10",
+          "points": 12
+        },
+        {
+          "date": "2026-04-11",
+          "points": 42
+        },
+        {
+          "date": "2026-04-12",
+          "points": 16
+        },
+        {
+          "date": "2026-04-13",
+          "points": 22
+        },
+        {
+          "date": "2026-04-14",
+          "points": 14
+        },
+        {
+          "date": "2026-04-15",
+          "points": 22
+        },
+        {
+          "date": "2026-04-16",
+          "points": 20
+        },
+        {
+          "date": "2026-04-17",
+          "points": 11
+        },
+        {
+          "date": "2026-04-18",
+          "points": 30
+        },
+        {
+          "date": "2026-04-19",
+          "points": 15
+        },
+        {
+          "date": "2026-04-20",
+          "points": 16
+        }
+      ],
+      "team_avg_per_day": [
+        {
+          "date": "2026-03-22",
+          "points": 6
+        },
+        {
+          "date": "2026-03-23",
+          "points": 14
+        },
+        {
+          "date": "2026-03-24",
+          "points": 12
+        },
+        {
+          "date": "2026-03-25",
+          "points": 11
+        },
+        {
+          "date": "2026-03-26",
+          "points": 16
+        },
+        {
+          "date": "2026-03-27",
+          "points": 9
+        },
+        {
+          "date": "2026-03-28",
+          "points": 19
+        },
+        {
+          "date": "2026-03-29",
+          "points": 5
+        },
+        {
+          "date": "2026-03-30",
+          "points": 14
+        },
+        {
+          "date": "2026-03-31",
+          "points": 12
+        },
+        {
+          "date": "2026-04-01",
+          "points": 11
+        },
+        {
+          "date": "2026-04-02",
+          "points": 12
+        },
+        {
+          "date": "2026-04-03",
+          "points": 8
+        },
+        {
+          "date": "2026-04-04",
+          "points": 22
+        },
+        {
+          "date": "2026-04-05",
+          "points": 11
+        },
+        {
+          "date": "2026-04-06",
+          "points": 14
+        },
+        {
+          "date": "2026-04-07",
+          "points": 12
+        },
+        {
+          "date": "2026-04-08",
+          "points": 7
+        },
+        {
+          "date": "2026-04-09",
+          "points": 12
+        },
+        {
+          "date": "2026-04-10",
+          "points": 7
+        },
+        {
+          "date": "2026-04-11",
+          "points": 26
+        },
+        {
+          "date": "2026-04-12",
+          "points": 10
+        },
+        {
+          "date": "2026-04-13",
+          "points": 14
+        },
+        {
+          "date": "2026-04-14",
+          "points": 9
+        },
+        {
+          "date": "2026-04-15",
+          "points": 14
+        },
+        {
+          "date": "2026-04-16",
+          "points": 12
+        },
+        {
+          "date": "2026-04-17",
+          "points": 7
+        },
+        {
+          "date": "2026-04-18",
+          "points": 19
+        },
+        {
+          "date": "2026-04-19",
+          "points": 9
+        },
+        {
+          "date": "2026-04-20",
+          "points": 10
+        }
+      ],
+      "activity_points_pattern": [
+        9,
+        22,
+        20,
+        18,
+        26,
+        14,
+        30,
+        8,
+        22,
+        20,
+        18,
+        20,
+        13,
+        36,
+        17,
+        22,
+        20,
+        12,
+        20,
+        12,
+        42,
+        16,
+        22,
+        14,
+        22,
+        20,
+        11,
+        30,
+        15,
+        16
+      ],
+      "team_avg_points_pattern": [
+        6,
+        14,
+        12,
+        11,
+        16,
+        9,
+        19,
+        5,
+        14,
+        12,
+        11,
+        12,
+        8,
+        22,
+        11,
+        14,
+        12,
+        7,
+        12,
+        7,
+        26,
+        10,
+        14,
+        9,
+        14,
+        12,
+        7,
+        19,
+        9,
+        10
+      ],
+      "misp_per_day": []
+    },
+    "7": {
+      "user_id": 7,
+      "username": "omers",
+      "display_name": "Omer Shapira",
+      "analyst": "omers",
+      "role_description": "SOC Automation Engineer",
+      "avatar_url": "./assets/avatars/omers.jpg",
+      "is_active": true,
+      "score": 1495,
+      "rank": 7,
+      "medal": "",
+      "trend": "—",
+      "total_iocs": 116,
+      "yara_count": 0,
+      "deletion_count": 0,
+      "streak_days": 30,
+      "badges": [
+        "team_player",
+        "campaign_master",
+        "on_fire"
+      ],
+      "level": 3,
+      "xp_in_level": 495,
+      "level_width": 500,
+      "xp_to_next": 5,
+      "activity_per_day": [
+        {
+          "date": "2026-03-22",
+          "points": 13
+        },
+        {
+          "date": "2026-03-23",
+          "points": 14
+        },
+        {
+          "date": "2026-03-24",
+          "points": 22
+        },
+        {
+          "date": "2026-03-25",
+          "points": 20
+        },
+        {
+          "date": "2026-03-26",
+          "points": 18
+        },
+        {
+          "date": "2026-03-27",
+          "points": 8
+        },
+        {
+          "date": "2026-03-28",
+          "points": 50
+        },
+        {
+          "date": "2026-03-29",
+          "points": 12
+        },
+        {
+          "date": "2026-03-30",
+          "points": 14
+        },
+        {
+          "date": "2026-03-31",
+          "points": 22
+        },
+        {
+          "date": "2026-04-01",
+          "points": 20
+        },
+        {
+          "date": "2026-04-02",
+          "points": 18
+        },
+        {
+          "date": "2026-04-03",
+          "points": 17
+        },
+        {
+          "date": "2026-04-04",
+          "points": 38
+        },
+        {
+          "date": "2026-04-05",
+          "points": 11
+        },
+        {
+          "date": "2026-04-06",
+          "points": 14
+        },
+        {
+          "date": "2026-04-07",
+          "points": 22
+        },
+        {
+          "date": "2026-04-08",
+          "points": 20
+        },
+        {
+          "date": "2026-04-09",
+          "points": 18
+        },
+        {
+          "date": "2026-04-10",
+          "points": 16
+        },
+        {
+          "date": "2026-04-11",
+          "points": 44
+        },
+        {
+          "date": "2026-04-12",
+          "points": 10
+        },
+        {
+          "date": "2026-04-13",
+          "points": 24
+        },
+        {
+          "date": "2026-04-14",
+          "points": 22
+        },
+        {
+          "date": "2026-04-15",
+          "points": 20
+        },
+        {
+          "date": "2026-04-16",
+          "points": 12
+        },
+        {
+          "date": "2026-04-17",
+          "points": 15
+        },
+        {
+          "date": "2026-04-18",
+          "points": 32
+        },
+        {
+          "date": "2026-04-19",
+          "points": 9
+        },
+        {
+          "date": "2026-04-20",
+          "points": 24
+        }
+      ],
+      "team_avg_per_day": [
+        {
+          "date": "2026-03-22",
+          "points": 8
+        },
+        {
+          "date": "2026-03-23",
+          "points": 9
+        },
+        {
+          "date": "2026-03-24",
+          "points": 14
+        },
+        {
+          "date": "2026-03-25",
+          "points": 12
+        },
+        {
+          "date": "2026-03-26",
+          "points": 11
+        },
+        {
+          "date": "2026-03-27",
+          "points": 5
+        },
+        {
+          "date": "2026-03-28",
+          "points": 31
+        },
+        {
+          "date": "2026-03-29",
+          "points": 7
+        },
+        {
+          "date": "2026-03-30",
+          "points": 9
+        },
+        {
+          "date": "2026-03-31",
+          "points": 14
+        },
+        {
+          "date": "2026-04-01",
+          "points": 12
+        },
+        {
+          "date": "2026-04-02",
+          "points": 11
+        },
+        {
+          "date": "2026-04-03",
+          "points": 11
+        },
+        {
+          "date": "2026-04-04",
+          "points": 24
+        },
+        {
+          "date": "2026-04-05",
+          "points": 7
+        },
+        {
+          "date": "2026-04-06",
+          "points": 9
+        },
+        {
+          "date": "2026-04-07",
+          "points": 14
+        },
+        {
+          "date": "2026-04-08",
+          "points": 12
+        },
+        {
+          "date": "2026-04-09",
+          "points": 11
+        },
+        {
+          "date": "2026-04-10",
+          "points": 10
+        },
+        {
+          "date": "2026-04-11",
+          "points": 27
+        },
+        {
+          "date": "2026-04-12",
+          "points": 6
+        },
+        {
+          "date": "2026-04-13",
+          "points": 15
+        },
+        {
+          "date": "2026-04-14",
+          "points": 14
+        },
+        {
+          "date": "2026-04-15",
+          "points": 12
+        },
+        {
+          "date": "2026-04-16",
+          "points": 7
+        },
+        {
+          "date": "2026-04-17",
+          "points": 9
+        },
+        {
+          "date": "2026-04-18",
+          "points": 20
+        },
+        {
+          "date": "2026-04-19",
+          "points": 6
+        },
+        {
+          "date": "2026-04-20",
+          "points": 15
+        }
+      ],
+      "activity_points_pattern": [
+        13,
+        14,
+        22,
+        20,
+        18,
+        8,
+        50,
+        12,
+        14,
+        22,
+        20,
+        18,
+        17,
+        38,
+        11,
+        14,
+        22,
+        20,
+        18,
+        16,
+        44,
+        10,
+        24,
+        22,
+        20,
+        12,
+        15,
+        32,
+        9,
+        24
+      ],
+      "team_avg_points_pattern": [
+        8,
+        9,
+        14,
+        12,
+        11,
+        5,
+        31,
+        7,
+        9,
+        14,
+        12,
+        11,
+        11,
+        24,
+        7,
+        9,
+        14,
+        12,
+        11,
+        10,
+        27,
+        6,
+        15,
+        14,
+        12,
+        7,
+        9,
+        20,
+        6,
+        15
+      ],
+      "misp_per_day": []
+    },
+    "8": {
+      "user_id": 8,
+      "username": "yaelb",
+      "display_name": "Yael Bitton",
+      "analyst": "yaelb",
+      "role_description": "Threat Intelligence Analyst",
+      "avatar_url": "./assets/avatars/yaelb.jpg",
+      "is_active": true,
+      "score": 2035,
+      "rank": 2,
+      "medal": "🥈",
+      "trend": "—",
+      "total_iocs": 158,
+      "yara_count": 1,
+      "deletion_count": 0,
+      "streak_days": 30,
+      "badges": [
+        "team_player",
+        "campaign_master",
+        "yara_rookie",
+        "on_fire"
+      ],
+      "level": 5,
+      "xp_in_level": 35,
+      "level_width": 500,
+      "xp_to_next": 465,
+      "activity_per_day": [
+        {
+          "date": "2026-03-22",
+          "points": 14
+        },
+        {
+          "date": "2026-03-23",
+          "points": 30
+        },
+        {
+          "date": "2026-03-24",
+          "points": 22
+        },
+        {
+          "date": "2026-03-25",
+          "points": 20
+        },
+        {
+          "date": "2026-03-26",
+          "points": 28
+        },
+        {
+          "date": "2026-03-27",
+          "points": 19
+        },
+        {
+          "date": "2026-03-28",
+          "points": 44
+        },
+        {
+          "date": "2026-03-29",
+          "points": 23
+        },
+        {
+          "date": "2026-03-30",
+          "points": 24
+        },
+        {
+          "date": "2026-03-31",
+          "points": 22
+        },
+        {
+          "date": "2026-04-01",
+          "points": 20
+        },
+        {
+          "date": "2026-04-02",
+          "points": 28
+        },
+        {
+          "date": "2026-04-03",
+          "points": 18
+        },
+        {
+          "date": "2026-04-04",
+          "points": 50
+        },
+        {
+          "date": "2026-04-05",
+          "points": 22
+        },
+        {
+          "date": "2026-04-06",
+          "points": 24
+        },
+        {
+          "date": "2026-04-07",
+          "points": 22
+        },
+        {
+          "date": "2026-04-08",
+          "points": 30
+        },
+        {
+          "date": "2026-04-09",
+          "points": 28
+        },
+        {
+          "date": "2026-04-10",
+          "points": 17
+        },
+        {
+          "date": "2026-04-11",
+          "points": 38
+        },
+        {
+          "date": "2026-04-12",
+          "points": 21
+        },
+        {
+          "date": "2026-04-13",
+          "points": 24
+        },
+        {
+          "date": "2026-04-14",
+          "points": 22
+        },
+        {
+          "date": "2026-04-15",
+          "points": 30
+        },
+        {
+          "date": "2026-04-16",
+          "points": 28
+        },
+        {
+          "date": "2026-04-17",
+          "points": 16
+        },
+        {
+          "date": "2026-04-18",
+          "points": 54
+        },
+        {
+          "date": "2026-04-19",
+          "points": 20
+        },
+        {
+          "date": "2026-04-20",
+          "points": 24
+        }
+      ],
+      "team_avg_per_day": [
+        {
+          "date": "2026-03-22",
+          "points": 9
+        },
+        {
+          "date": "2026-03-23",
+          "points": 19
+        },
+        {
+          "date": "2026-03-24",
+          "points": 14
+        },
+        {
+          "date": "2026-03-25",
+          "points": 12
+        },
+        {
+          "date": "2026-03-26",
+          "points": 17
+        },
+        {
+          "date": "2026-03-27",
+          "points": 12
+        },
+        {
+          "date": "2026-03-28",
+          "points": 27
+        },
+        {
+          "date": "2026-03-29",
+          "points": 14
+        },
+        {
+          "date": "2026-03-30",
+          "points": 15
+        },
+        {
+          "date": "2026-03-31",
+          "points": 14
+        },
+        {
+          "date": "2026-04-01",
+          "points": 12
+        },
+        {
+          "date": "2026-04-02",
+          "points": 17
+        },
+        {
+          "date": "2026-04-03",
+          "points": 11
+        },
+        {
+          "date": "2026-04-04",
+          "points": 31
+        },
+        {
+          "date": "2026-04-05",
+          "points": 14
+        },
+        {
+          "date": "2026-04-06",
+          "points": 15
+        },
+        {
+          "date": "2026-04-07",
+          "points": 14
+        },
+        {
+          "date": "2026-04-08",
+          "points": 19
+        },
+        {
+          "date": "2026-04-09",
+          "points": 17
+        },
+        {
+          "date": "2026-04-10",
+          "points": 11
+        },
+        {
+          "date": "2026-04-11",
+          "points": 24
+        },
+        {
+          "date": "2026-04-12",
+          "points": 13
+        },
+        {
+          "date": "2026-04-13",
+          "points": 15
+        },
+        {
+          "date": "2026-04-14",
+          "points": 14
+        },
+        {
+          "date": "2026-04-15",
+          "points": 19
+        },
+        {
+          "date": "2026-04-16",
+          "points": 17
+        },
+        {
+          "date": "2026-04-17",
+          "points": 10
+        },
+        {
+          "date": "2026-04-18",
+          "points": 33
+        },
+        {
+          "date": "2026-04-19",
+          "points": 12
+        },
+        {
+          "date": "2026-04-20",
+          "points": 15
+        }
+      ],
+      "activity_points_pattern": [
+        14,
+        30,
+        22,
+        20,
+        28,
+        19,
+        44,
+        23,
+        24,
+        22,
+        20,
+        28,
+        18,
+        50,
+        22,
+        24,
+        22,
+        30,
+        28,
+        17,
+        38,
+        21,
+        24,
+        22,
+        30,
+        28,
+        16,
+        54,
+        20,
+        24
+      ],
+      "team_avg_points_pattern": [
+        9,
+        19,
+        14,
+        12,
+        17,
+        12,
+        27,
+        14,
+        15,
+        14,
+        12,
+        17,
+        11,
+        31,
+        14,
+        15,
+        14,
+        19,
+        17,
+        11,
+        24,
+        13,
+        15,
+        14,
+        19,
+        17,
+        10,
+        33,
+        12,
+        15
+      ],
+      "misp_per_day": []
+    },
+    "9": {
+      "user_id": 9,
+      "username": "oril",
+      "display_name": "Ori Levy",
+      "analyst": "oril",
+      "role_description": "SOC Manager",
+      "avatar_url": "./assets/avatars/oril.jpg",
+      "is_active": true,
+      "score": 1165,
+      "rank": 9,
+      "medal": "",
+      "trend": "—",
+      "total_iocs": 93,
+      "yara_count": 0,
+      "deletion_count": 0,
+      "streak_days": 30,
+      "badges": [
+        "team_player",
+        "campaign_master",
+        "on_fire"
+      ],
+      "level": 3,
+      "xp_in_level": 165,
+      "level_width": 500,
+      "xp_to_next": 335,
+      "activity_per_day": [
+        {
+          "date": "2026-03-22",
+          "points": 11
+        },
+        {
+          "date": "2026-03-23",
+          "points": 14
+        },
+        {
+          "date": "2026-03-24",
+          "points": 22
+        },
+        {
+          "date": "2026-03-25",
+          "points": 20
+        },
+        {
+          "date": "2026-03-26",
+          "points": 18
+        },
+        {
+          "date": "2026-03-27",
+          "points": 16
+        },
+        {
+          "date": "2026-03-28",
+          "points": 38
+        },
+        {
+          "date": "2026-03-29",
+          "points": 10
+        },
+        {
+          "date": "2026-03-30",
+          "points": 24
+        },
+        {
+          "date": "2026-03-31",
+          "points": 22
+        },
+        {
+          "date": "2026-04-01",
+          "points": 20
+        },
+        {
+          "date": "2026-04-02",
+          "points": 12
+        },
+        {
+          "date": "2026-04-03",
+          "points": 15
+        },
+        {
+          "date": "2026-04-04",
+          "points": 44
+        },
+        {
+          "date": "2026-04-05",
+          "points": 9
+        },
+        {
+          "date": "2026-04-06",
+          "points": 24
+        },
+        {
+          "date": "2026-04-07",
+          "points": 22
+        },
+        {
+          "date": "2026-04-08",
+          "points": 14
+        },
+        {
+          "date": "2026-04-09",
+          "points": 22
+        },
+        {
+          "date": "2026-04-10",
+          "points": 14
+        },
+        {
+          "date": "2026-04-11",
+          "points": 32
+        },
+        {
+          "date": "2026-04-12",
+          "points": 8
+        },
+        {
+          "date": "2026-04-13",
+          "points": 24
+        },
+        {
+          "date": "2026-04-14",
+          "points": 16
+        },
+        {
+          "date": "2026-04-15",
+          "points": 14
+        },
+        {
+          "date": "2026-04-16",
+          "points": 22
+        },
+        {
+          "date": "2026-04-17",
+          "points": 13
+        },
+        {
+          "date": "2026-04-18",
+          "points": 38
+        },
+        {
+          "date": "2026-04-19",
+          "points": 17
+        },
+        {
+          "date": "2026-04-20",
+          "points": 18
+        }
+      ],
+      "team_avg_per_day": [
+        {
+          "date": "2026-03-22",
+          "points": 7
+        },
+        {
+          "date": "2026-03-23",
+          "points": 9
+        },
+        {
+          "date": "2026-03-24",
+          "points": 14
+        },
+        {
+          "date": "2026-03-25",
+          "points": 12
+        },
+        {
+          "date": "2026-03-26",
+          "points": 11
+        },
+        {
+          "date": "2026-03-27",
+          "points": 10
+        },
+        {
+          "date": "2026-03-28",
+          "points": 24
+        },
+        {
+          "date": "2026-03-29",
+          "points": 6
+        },
+        {
+          "date": "2026-03-30",
+          "points": 15
+        },
+        {
+          "date": "2026-03-31",
+          "points": 14
+        },
+        {
+          "date": "2026-04-01",
+          "points": 12
+        },
+        {
+          "date": "2026-04-02",
+          "points": 7
+        },
+        {
+          "date": "2026-04-03",
+          "points": 9
+        },
+        {
+          "date": "2026-04-04",
+          "points": 27
+        },
+        {
+          "date": "2026-04-05",
+          "points": 6
+        },
+        {
+          "date": "2026-04-06",
+          "points": 15
+        },
+        {
+          "date": "2026-04-07",
+          "points": 14
+        },
+        {
+          "date": "2026-04-08",
+          "points": 9
+        },
+        {
+          "date": "2026-04-09",
+          "points": 14
+        },
+        {
+          "date": "2026-04-10",
+          "points": 9
+        },
+        {
+          "date": "2026-04-11",
+          "points": 20
+        },
+        {
+          "date": "2026-04-12",
+          "points": 5
+        },
+        {
+          "date": "2026-04-13",
+          "points": 15
+        },
+        {
+          "date": "2026-04-14",
+          "points": 10
+        },
+        {
+          "date": "2026-04-15",
+          "points": 9
+        },
+        {
+          "date": "2026-04-16",
+          "points": 14
+        },
+        {
+          "date": "2026-04-17",
+          "points": 8
+        },
+        {
+          "date": "2026-04-18",
+          "points": 24
+        },
+        {
+          "date": "2026-04-19",
+          "points": 11
+        },
+        {
+          "date": "2026-04-20",
+          "points": 11
+        }
+      ],
+      "activity_points_pattern": [
+        11,
+        14,
+        22,
+        20,
+        18,
+        16,
+        38,
+        10,
+        24,
+        22,
+        20,
+        12,
+        15,
+        44,
+        9,
+        24,
+        22,
+        14,
+        22,
+        14,
+        32,
+        8,
+        24,
+        16,
+        14,
+        22,
+        13,
+        38,
+        17,
+        18
+      ],
+      "team_avg_points_pattern": [
+        7,
+        9,
+        14,
+        12,
+        11,
+        10,
+        24,
+        6,
+        15,
+        14,
+        12,
+        7,
+        9,
+        27,
+        6,
+        15,
+        14,
+        9,
+        14,
+        9,
+        20,
+        5,
+        15,
+        10,
+        9,
+        14,
+        8,
+        24,
+        11,
+        11
+      ],
+      "misp_per_day": []
+    }
+  },
+  "ticker_messages": [
+    {
+      "text": "שבוע הבא יתקיים PT של חברה חיצונית על סביבת AD. שימו לב להתראות חריגות ועדכנו את צוות הסייבר.",
+      "color": "#fbbf24",
+      "dir": "rtl"
+    },
+    {
+      "text": "ברוך הבא לעידו שחזר ממילואים. תעדכנו אותו בהקשרי תחקירים פתוחים.",
+      "color": "#00d4ff",
+      "dir": "rtl"
+    },
+    {
+      "text": "על כל חשד לבעיות סטטיות ב‑SIEM (חוסר לוגים/דיליי), לפתוח תקלה ולפנות לצוות סייבר.",
+      "color": "#34d399",
+      "dir": "rtl"
+    },
+    {
+      "text": "תזכורת: לא מבצעים block לאינדיקטורים פנימיים בלי double‑check מול הבעלים העסקיים.",
+      "color": "#a78bfa",
+      "dir": "rtl"
+    },
+    {
+      "text": "הקשחת MFA: כל חריגה באימותים (impossible travel / token reuse) להעלות כ‑High priority.",
+      "color": "#fb7185",
+      "dir": "rtl"
+    },
+    {
+      "text": "שינוי נוהל: IOC עם TTL זמני דורש Ticket ID + הערת reason ברורה.",
+      "color": "#93c5fd",
+      "dir": "rtl"
+    },
+    {
+      "text": "אם יש זיהוי של phishing בקבוצות HR/Finance — לתייג 'phishing' ולקשר לקמפיין מתאים.",
+      "color": "#60a5fa",
+      "dir": "rtl"
+    },
+    {
+      "text": "בדיקות תחזוקה ב‑EDR הלילה 23:00‑01:00. יתכנו disconnects זמניים.",
+      "color": "#f97316",
+      "dir": "rtl"
+    }
+  ],
+  "banner_direction": "rtl"
+}
