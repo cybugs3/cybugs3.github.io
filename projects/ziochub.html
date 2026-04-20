@@ -6,15 +6,15 @@
     <title>ziochub (ZIoCHub) | CyBugs³</title>
     <meta name="description" content="ZIoCHub (ziochub) - IOC & YARA management, feeds, MISP and optional Cisco ESA sync. Install (online/offline) and operations overview by CyBugs³.">
     <meta name="theme-color" content="#050505">
-    <link rel="icon" href="../assets/favicon-32.png" type="image/png" sizes="32x32">
-    <link rel="apple-touch-icon" href="../assets/brand-mark-192.png" sizes="180x180">
+    <link rel="icon" href="../cybugs3_icon.png" type="image/png">
+    <link rel="apple-touch-icon" href="../cybugs3_icon.png">
     <meta property="og:type" content="website">
     <meta property="og:title" content="ziochub (ZIoCHub) | CyBugs³">
     <meta property="og:description" content="ZIoCHub (ziochub) - IOC & YARA management, feeds, MISP and optional Cisco ESA sync. Install (online/offline) and operations overview by CyBugs³.">
-    <meta property="og:image" content="../assets/brand-opengraph.png">
+    <meta property="og:image" content="../cybugs3_icon.png">
     <meta property="og:image:alt" content="CyBugs³ brand mark">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="../assets/brand-opengraph.png">
+    <meta name="twitter:image" content="../cybugs3_icon.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -29,13 +29,14 @@
 
     <nav class="p-6 border-b border-gray-900 bg-black/80 backdrop-blur-md sticky top-0 z-50 flex flex-wrap items-center justify-between gap-4" aria-label="Primary">
         <a href="../index.html" class="flex items-center gap-3 min-w-0">
-            <img src="../assets/brand-mark-512.png" alt="CyBugs³" width="40" height="40" class="site-mark" decoding="async" fetchpriority="high">
+            <img src="../cybugs3_icon.png" alt="CyBugs³" width="40" height="40" class="site-mark" decoding="async" fetchpriority="high">
             <span class="font-bold text-xl md:text-2xl tracking-tighter text-green-500 cyber-logo">CyBugs<span class="text-white">³</span></span>
         </a>
         <div class="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm font-medium">
             <a href="../index.html#about" class="text-gray-400 hover:text-white transition">About</a>
             <a href="../index.html#review" class="text-gray-400 hover:text-white transition">For reviewers</a>
             <a href="../index.html#projects" class="text-gray-400 hover:text-white transition">Projects</a>
+            <a href="ziochub-demo/site/index.html" target="_blank" rel="noopener noreferrer" class="text-green-500 hover:text-green-400 transition font-medium">Live demo</a>
             <a href="https://github.com/Zwerd/ziochub" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition">GitHub</a>
         </div>
     </nav>
@@ -52,6 +53,22 @@
                 IOC and YARA management platform for SOC teams: SQLite-backed storage, plain-text feeds for security devices, optional MISP and Cisco ESA integrations, and an offline-friendly deployment story.
             </p>
         </header>
+
+        <section aria-labelledby="ziochub-demo" class="mb-10">
+            <div class="cyber-panel rounded-lg border border-green-500/35 p-6 md:p-8">
+                <h2 id="ziochub-demo" class="text-xl font-bold text-white mb-3 flex items-center gap-2 flex-wrap">
+                    <i data-lucide="monitor-play" class="w-6 h-6 text-green-500 shrink-0" aria-hidden="true"></i>
+                    <span>Interactive demo</span>
+                </h2>
+                <p class="text-gray-400 text-sm md:text-[15px] leading-relaxed mb-6 max-w-2xl">
+                    Open the browser-hosted <strong class="text-gray-200 font-medium">ZIoCHub vDEMO</strong> to click through tabs, sample data, and UI flows-no install required. For production deployment and integrations, use the GitHub repository below.
+                </p>
+                <a href="ziochub-demo/site/index.html" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 bg-green-500 text-black font-bold font-mono text-sm rounded hover:bg-green-400 transition">
+                    <i data-lucide="external-link" class="w-5 h-5" aria-hidden="true"></i>
+                    Open live demo
+                </a>
+            </div>
+        </section>
 
         <section aria-labelledby="shots-zio">
             <h2 id="shots-zio" class="text-xl font-bold text-white mb-4 flex items-center gap-2">
@@ -89,7 +106,10 @@ sudo ./setup.sh</pre>
         </div>
 
         <div class="mt-12 flex flex-wrap gap-4">
-            <a href="https://github.com/Zwerd/ziochub" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 bg-green-500 text-black font-bold font-mono text-sm rounded hover:bg-green-400 transition">
+            <a href="ziochub-demo/site/index.html" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 bg-green-500 text-black font-bold font-mono text-sm rounded hover:bg-green-400 transition">
+                <i data-lucide="monitor-play" class="w-5 h-5"></i> Live demo
+            </a>
+            <a href="https://github.com/Zwerd/ziochub" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 border border-green-500/60 text-green-400 font-bold font-mono text-sm rounded hover:bg-green-500/10 hover:border-green-400 transition">
                 <i data-lucide="github" class="w-5 h-5"></i> View on GitHub
             </a>
             <a href="../index.html#projects" class="inline-flex items-center gap-2 px-6 py-3 border border-gray-700 text-gray-300 font-mono text-sm rounded hover:border-green-500 hover:text-green-500 transition">All projects</a>
