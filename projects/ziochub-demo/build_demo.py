@@ -119,6 +119,12 @@ def _render_static_index_html(*, version: str = "DEMO") -> str:
     # Mark HTML as demo for demo-only JS behaviors.
     tpl = tpl.replace("<html", '<html data-demo="1"', 1)
 
+    # For fully-static hosting (e.g. GitHub Pages under a subpath), point Feed Catalog links
+    # to generated relative pages (feed/*/) instead of absolute /feed/*.
+    # Example: /feed/ip -> feed/ip/
+    tpl = re.sub(r'href="/feed/([^"]+)"', r'href="feed/\1/"', tpl)
+    tpl = re.sub(r"href='/feed/([^']+)'", r"href='feed/\1/'", tpl)
+
     # Strip Jinja comments (best-effort)
     tpl = re.sub(r"\{#.*?#\}", "", tpl, flags=re.DOTALL)
 
@@ -1040,13 +1046,30 @@ def _feed_lines(iocs: list[dict], *, ioc_type: str, hash_len: int | None = None)
 def _write_static_feeds(*, out_dir: Path, iocs: list[dict], yara_rows: list[dict]) -> None:
     """
     Create static equivalents for the plain-text /feed/* endpoints so clicking links in the demo works
-    under a simple static server (no Flask routes).
-    We write files without extensions so paths like /feed/ip map to feed/ip on disk.
+    on GitHub Pages / any static host (no Flask routes, no JS mocking required).
+    We generate directories with index.html so links can point to /feed/ip/ and render as a plain page.
     """
     feed_root = out_dir / "feed"
 
+    def write_feed_page(rel: str, body: str) -> None:
+        # rel: e.g. "ip" or "pa/ip"
+        target = feed_root / rel / "index.html"
+        _write_text(target, body)
+
+    def page_html(title: str, text: str) -> str:
+        # intentionally minimal: no CSS, no layout, just raw text
+        return (
+            "<!doctype html>\n"
+            "<meta charset=\"utf-8\">\n"
+            f"<title>{title}</title>\n"
+            "<pre>"
+            + (text or "")
+            + "</pre>\n"
+        )
+
     def write_plain(rel: str, lines: list[str]) -> None:
-        _write_text(feed_root / rel, "\n".join(lines) + ("\n" if lines else ""))
+        txt = "\n".join(lines) + ("\n" if lines else "")
+        write_feed_page(rel, page_html("/feed/" + rel, txt))
 
     # Base feeds
     write_plain("ip", _feed_lines(iocs, ioc_type="IP"))
@@ -1079,7 +1102,7 @@ def _write_static_feeds(*, out_dir: Path, iocs: list[dict], yara_rows: list[dict
 
     # ESA email (CSV)
     emails = _feed_lines(iocs, ioc_type="Email")
-    _write_text(feed_root / "esa" / "email", ",".join(emails))
+    write_feed_page("esa/email", page_html("/feed/esa/email", ",".join(emails)))
 
     # ePO: files-list = ticket ids present in demo data
     tickets = sorted({str(r.get("ticket_id") or "").strip() for r in (iocs or []) if str(r.get("ticket_id") or "").strip()})
@@ -1093,7 +1116,10 @@ def _write_static_feeds(*, out_dir: Path, iocs: list[dict], yara_rows: list[dict
         if not v or t not in ("IP", "Domain", "URL", "Email", "Hash"):
             continue
         stix_objs.append({"type": "indicator", "name": v, "pattern": v, "created": r.get("created_at") or _now_iso()})
-    _write_text(feed_root / "stix", json.dumps({"type": "bundle", "objects": stix_objs}, ensure_ascii=False, indent=2))
+    write_feed_page(
+        "stix",
+        page_html("/feed/stix", json.dumps({"type": "bundle", "objects": stix_objs}, ensure_ascii=False, indent=2)),
+    )
 
     # YARA list + content
     yar_names = sorted({str(r.get("filename") or "").strip() for r in (yara_rows or []) if str(r.get("filename") or "").strip()})
@@ -1101,7 +1127,7 @@ def _write_static_feeds(*, out_dir: Path, iocs: list[dict], yara_rows: list[dict
     for name in yar_names:
         src = out_dir / "assets" / "yara" / name
         if src.is_file():
-            _write_text(feed_root / "yara-content" / name, _read_text(src))
+            write_feed_page("yara-content/" + name, page_html("/feed/yara-content/" + name, _read_text(src)))
 
 
 def main() -> None:

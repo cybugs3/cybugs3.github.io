@@ -858,21 +858,7 @@ initApp();
         });
     }
 
-    // Demo: open feed endpoints in a viewer page (static sites often download /feed/*).
-    try {
-        const isDemo = document.documentElement.getAttribute('data-demo') === '1' || (window.TG_CONFIG && String(window.TG_CONFIG.version || '').toUpperCase().includes('DEMO'));
-        if (isDemo) {
-            modal.addEventListener('click', (e) => {
-                const a = e.target && e.target.closest ? e.target.closest('a') : null;
-                if (!a) return;
-                const href = a.getAttribute('href') || '';
-                if (!href.startsWith('/feed/')) return;
-                e.preventDefault();
-                const url = './feed-view.html?path=' + encodeURIComponent(href);
-                window.open(url, '_blank', 'noopener,noreferrer');
-            });
-        }
-    } catch (e) { /* ignore */ }
+    // No demo-specific behavior here; demo rewrites links at build time.
 })();
 
 // ---------------------------------------------------------------------------
