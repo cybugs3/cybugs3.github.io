@@ -107,6 +107,12 @@ def _render_static_index_html(*, version: str = "DEMO") -> str:
         tpl,
     )
 
+    # Same as Flask: url_for static root for JS (live-stats flag SVG paths). Must run before stray-{{ strip below.
+    tpl = tpl.replace(
+        "{{ url_for('static', filename='js/app.js').replace('js/app.js', '') | tojson }}",
+        '"./static/"',
+    )
+
     # TG_CONFIG: i18nBase is a url_for('static', filename='i18n/') which becomes ./static/i18n/
     # Leave as-is; our replacement above already covers it.
 
