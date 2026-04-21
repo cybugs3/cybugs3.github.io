@@ -9,6 +9,10 @@
     "read_only": "View-only (login to edit)",
     "login_required": "Please log in to submit IOCs"
   },
+  "nav": {
+    "open_menu": "Open menu",
+    "close_menu": "Close menu"
+  },
   "tab": {
     "submit": "Submit IOCs",
     "search": "Search & Investigate",
@@ -288,6 +292,7 @@
     "select_campaign": "-- Select campaign --",
     "link_btn": "Link IOC",
     "loading": "Loading…",
+    "no_description": "No description",
     "name_placeholder": "Campaign name",
     "desc_placeholder": "Optional description",
     "ioc_value_placeholder": "Exact IOC value",

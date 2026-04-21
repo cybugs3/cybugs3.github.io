@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" id="htmlRoot" data-version="DEMO">
+<html data-demo="1" lang="en" id="htmlRoot" data-version="DEMO">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,16 +32,16 @@
 </head>
 <body class="bg-primary text-primary h-screen w-screen overflow-hidden flex flex-col" data-authenticated="1" data-user-id="demo" data-mute-sound="1" data-ambition-popup-disabled="0" data-achievement-popup-disabled="0" data-search-comment-rtl="0">
     <!-- Top Bar (header-bar = solid bg, no glass override) -->
-    <header class="header-bar border-b-2 border-white/10 bg-secondary sticky top-0 z-50 neon-header backdrop-blur-md flex-shrink-0">
+    <header class="header-bar border-b-2 border-white/10 bg-secondary sticky top-0 neon-header backdrop-blur-md flex-shrink-0 relative app-header-shell">
         <div class="navbar-container">
-            <!-- LEFT: Logo + Navigation Tabs -->
+            <!-- LEFT: Brand + Navigation Tabs -->
             <div class="navbar-left">
                 <div class="navbar-logo">
                     
 <a href="./index.html" class="navbar-logo-link" aria-label="Go to Live Stats">
     <img src="./static/ziochub_smaller.png" alt="ZIoCHub" class="w-14 h-14 object-contain flex-shrink-0" style="filter: drop-shadow(0 0 6px rgba(0, 212, 255, 0.4));">
 </a>
-<div>
+<div class="brand-text-block">
     <h1 class="text-2xl font-bold tracking-wider neon-text flex items-center gap-2">
         <span class="text-white brand-name">ZIoCHub vDEMO</span>
         <span class="text-xs font-semibold px-2 py-1 rounded commander-badge">IOC & YARA Mgmt</span>
@@ -51,7 +51,7 @@
 </div>
 
                 </div>
-                <nav class="navbar-tabs">
+                <nav id="mainNavbarTabs" class="navbar-tabs" role="navigation" aria-label="Main">
                     <button class="tab-button" data-tab="live-stats" data-i18n="tab.stats">
                         <span data-i18n="tab.stats">Live Stats</span>
                     </button>
@@ -84,7 +84,7 @@
             <div class="navbar-right">
                 <div id="authBox" class="flex items-center gap-2 shrink-0">
                     <a id="authLogin" href="/login" class="px-3 py-1 bg-tertiary rounded hover:border-accent-green transition text-sm text-cyan-400 hidden" data-i18n="auth.login">Login</a>
-                    <button id="authProfile" type="button" class="analyst-avatar-btn flex items-center rounded-full transition-all duration-300 hidden" title="">
+                    <button id="authProfile" type="button" class="analyst-avatar-btn flex items-center rounded-full transition-all duration-300" title="">
                         
                         <img id="authAvatar" class="analyst-avatar-img w-14 h-14 rounded-full object-cover" src="" alt="">
                         <span id="authAvatarPlaceholder" class="analyst-avatar-placeholder hidden w-14 h-14 rounded-full flex items-center justify-center text-xl">👤</span>
@@ -97,8 +97,8 @@
                         </span>
                         <span id="adminInboxBadge" class="hidden absolute -top-2 -right-2 min-w-[18px] h-[18px] px-1 rounded-full bg-red-600 text-white text-[11px] leading-[18px] text-center font-bold"></span>
                     </button>
-                    <a id="authAdmin" href="/admin" class="px-3 py-1 bg-tertiary rounded hover:border-accent-green transition text-sm text-cyan-400 hidden" data-i18n="auth.admin">Admin</a>
-                    <a id="authLogout" href="/logout" class="px-3 py-1 bg-tertiary rounded hover:border-red-400/70 transition text-sm text-red-400 hidden" data-i18n="auth.logout">Logout</a>
+                    <a id="authAdmin" href="/admin" class="hidden px-3 py-1 bg-tertiary rounded hover:border-accent-green transition text-sm text-cyan-400" data-i18n="auth.admin">Admin</a>
+                    <a id="authLogout" href="/logout" class="hidden px-3 py-1 bg-tertiary rounded hover:border-red-400/70 transition text-sm text-red-400" data-i18n="auth.logout">Logout</a>
                 </div>
                 <div class="navbar-lang-theme flex flex-col gap-0.5">
                     <button id="langToggle" class="w-8 h-7 flex items-center justify-center bg-tertiary rounded hover:border-accent-green transition text-xs">
@@ -119,8 +119,8 @@
 
             <!-- Tab Contents -->
             <div class="px-3 py-4 flex-1 min-h-0 flex flex-col overflow-hidden">
-                <!-- Tab 1: Live Stats (Default) - Fixed-height cockpit, no page scroll -->
-                <div id="tab-live-stats" class="tab-content hidden flex flex-col h-full overflow-hidden">
+                <!-- Tab 1: Live Stats (Default) — desktop: fixed cockpit; mobile: full tab scrolls (see style.css) -->
+                <div id="tab-live-stats" class="tab-content live-stats-tab-root hidden flex flex-col h-full min-h-0 overflow-hidden">
                     <div class="flex justify-between items-center mb-3 flex-shrink-0">
                         <h2 class="text-2xl font-bold accent-blue" data-i18n="stats.title">Live Statistics</h2>
                         <div id="liveIndicator" class="flex items-center gap-2 text-sm accent-green" style="display: none;">
@@ -176,7 +176,7 @@
                         </div>
                     </div>
                     <!-- Threat Intelligence Dashboard (5-Column Grid: Countries, TLDs, Emails, Campaign Impact, Live Feed) -->
-                    <div class="flex-1 flex flex-col min-h-0">
+                    <div class="flex-1 flex flex-col min-h-0 live-stats-dashboard-wrap">
                         <h3 class="text-xl font-bold mb-3 accent-blue flex-shrink-0" data-i18n="stats.charts.title">Threat Intelligence Dashboard</h3>
                         <div class="grid grid-cols-1 lg:grid-cols-5 gap-3 items-stretch flex-1 min-h-0">
                             <!-- Column 1: Top Countries -->
@@ -780,7 +780,7 @@
                     </div>
 
                     <!-- Ladder (left) + Analyst Spotlight (center) -->
-                    <div class="flex-1 min-h-0 flex gap-4 overflow-hidden">
+                    <div class="flex-1 min-h-0 flex gap-4 overflow-hidden champs-layout-root">
                         <aside id="champsLadder" class="champs-ladder w-[300px] flex-shrink-0 flex flex-col min-h-0 bg-tertiary rounded-xl border border-white/10 overflow-hidden shadow-lg">
                             <div class="champs-ladder-header px-4 py-3 border-b border-white/10">
                                 <div class="flex items-center justify-between">
@@ -833,14 +833,14 @@
                 <!-- Tab: Campaign Graph (3-column fixed layout, no page scroll) -->
                 <div id="tab-campaigns" class="tab-content hidden flex flex-col h-full overflow-hidden">
                     <h2 class="text-2xl font-bold mb-3 accent-blue flex-shrink-0" data-i18n="campaign.title">Campaign Graph</h2>
-                    <div class="flex-1 min-h-0 flex gap-3">
+                    <div class="flex-1 min-h-0 flex gap-3 campaigns-layout-root">
                         <!-- Left Sidebar: Active Campaigns -->
                         <aside class="w-[300px] flex-shrink-0 flex flex-col min-h-0 overflow-hidden">
                             <div class="card bg-tertiary rounded-lg p-4 flex flex-col h-full min-h-0">
                                 <div class="flex items-center justify-between mb-2 flex-shrink-0">
                                     <h3 class="text-lg font-semibold accent-blue" data-i18n="campaign.active">Active Campaigns</h3>
                                 </div>
-                                <ul id="campaignList" class="space-y-1 overflow-y-auto flex-1 min-h-0 text-sm">
+                                <ul id="campaignList" class="space-y-3 overflow-y-auto flex-1 min-h-0 text-sm">
                                     <li class="text-secondary" data-i18n="campaign.loading">Loading…</li>
                                 </ul>
                             </div>
@@ -1005,7 +1005,7 @@
                     </div>
 
                     <!-- Area B: Split View (Incoming | Outgoing | Excluded) - Incoming left, Outgoing center, Excluded right -->
-                    <div class="flex-1 min-h-0 flex gap-3 flex-col lg:flex-row">
+                    <div class="flex-1 min-h-0 flex gap-3 flex-col lg:flex-row feed-pulse-streams-root">
                         <div class="flex-1 min-h-0 min-w-0 flex flex-col bg-tertiary border border-green-500/30 rounded-lg overflow-hidden">
                             <div class="flex-shrink-0 px-3 py-2 bg-tertiary border-b border-green-500/30 font-semibold text-green-200 text-sm">
                                 <span data-i18n="feedpulse.incoming">Incoming Stream</span> <span id="feedPulseIncomingCount" class="opacity-80">(0)</span>
@@ -1090,7 +1090,7 @@
                             <span data-i18n="reports.export_pdf">Export PDF</span>
                         </button>
                     </div>
-                    <div class="flex flex-1 min-h-0 gap-4">
+                    <div class="flex flex-1 min-h-0 gap-4 reports-layout-root">
                         <!-- Master: Left sidebar (Champs-style) -->
                         <div class="reports-sidebar w-56 flex-shrink-0 flex flex-col bg-tertiary rounded-xl border border-white/10 overflow-hidden shadow-lg">
                             <div class="flex border-b border-white/10">
@@ -1540,6 +1540,13 @@
                                 Remove Photo
                             </button>
                         </div>
+                    </div>
+
+                    <div class="mt-6 pt-6 border-t border-white/10 hidden">
+                        
+                        <a id="profileAdminBtn" href="/admin" class="btn-cmd-primary w-full text-center inline-flex items-center justify-center mb-2" data-i18n="auth.admin">Admin</a>
+                        
+                        <a id="profileLogoutBtn" href="/logout" class="btn-cmd-neutral w-full text-center inline-flex items-center justify-center" data-i18n="auth.logout">Logout</a>
                     </div>
                 </div>
             </div>
@@ -2086,7 +2093,8 @@
     </div>
 
     <!-- Ambition popup (on login) - one message per session -->
-    <div id="ambitionPopupModal" class="hidden fixed inset-0 z-[9998] flex items-center justify-center bg-black/60 backdrop-blur-sm">
+    <!-- z-index above Champs confetti canvas (9970) and rank-up (9999) so login popup stays clickable -->
+    <div id="ambitionPopupModal" class="hidden fixed inset-0 z-[10060] flex items-center justify-center bg-black/60 backdrop-blur-sm">
         <div class="relative w-full max-w-md mx-4 rounded-2xl border border-white/15 bg-[#0f172a] shadow-2xl p-6">
             <h3 id="ambitionPopupTitle" class="text-xl font-bold text-amber-300 mb-3">Your focus for today</h3>
             <p id="ambitionPopupMessage" class="text-slate-200 text-left mb-6"></p>

@@ -16,6 +16,13 @@
     });
   }
 
+  function textResponse(text, status, contentType) {
+    return new Response(String(text || ''), {
+      status: status || 200,
+      headers: { 'Content-Type': contentType || 'text/plain; charset=utf-8' },
+    });
+  }
+
   function ok(obj) {
     return jsonResponse(Object.assign({ success: true }, obj || {}), 200);
   }
@@ -76,6 +83,93 @@
     const next = Object.assign({}, st0, { _cacheReady: true, users, iocs, campaigns, yara, champs, user });
     saveState(next);
     return next;
+  }
+
+  function stripUrlProtocol(url) {
+    const s = String(url || '').trim();
+    return s.replace(/^(?:https?|ftp|sftp):\/\//i, '');
+  }
+
+  function uniqSorted(arr) {
+    const out = Array.from(new Set((arr || []).filter(Boolean).map(x => String(x).trim()).filter(Boolean)));
+    out.sort((a, b) => a.localeCompare(b));
+    return out;
+  }
+
+  function iocLines(st, type, hashLen) {
+    const iocs = (st && st.iocs) ? st.iocs : [];
+    return uniqSorted(iocs
+      .filter(x => String(x.type || '') === String(type || ''))
+      .map(x => String(x.value || '').trim())
+      .filter(v => v && (!hashLen || v.length === hashLen)));
+  }
+
+  async function handleFeed(url, opts) {
+    const u = new URL(url, window.location.href);
+    const path = u.pathname || '';
+    const method = ((opts && opts.method) || 'GET').toUpperCase();
+    if (method !== 'GET') return textResponse('Method not allowed', 405);
+    if (!path.startsWith('/feed/')) return textResponse('Not found', 404);
+
+    const st = await ensureCache();
+    const seg = path.replace(/^\/feed\//, '').split('/').filter(Boolean);
+    const key = seg.join('/');
+
+    if (key === 'ip') return textResponse(iocLines(st, 'IP').join('\n') + '\n');
+    if (key === 'domain') return textResponse(iocLines(st, 'Domain').join('\n') + '\n');
+    if (key === 'url') return textResponse(iocLines(st, 'URL').join('\n') + '\n');
+    if (key === 'email') return textResponse(iocLines(st, 'Email').join('\n') + '\n');
+
+    if (key === 'hash') return textResponse(iocLines(st, 'Hash').join('\n') + '\n');
+    if (key === 'md5') return textResponse(iocLines(st, 'Hash', 32).join('\n') + '\n');
+    if (key === 'sha1') return textResponse(iocLines(st, 'Hash', 40).join('\n') + '\n');
+    if (key === 'sha256') return textResponse(iocLines(st, 'Hash', 64).join('\n') + '\n');
+
+    if (key === 'pa/ip') return textResponse(iocLines(st, 'IP').join('\n') + '\n');
+    if (key === 'pa/domain') return textResponse(iocLines(st, 'Domain').join('\n') + '\n');
+    if (key === 'pa/url') {
+      const vals = iocLines(st, 'URL').map(stripUrlProtocol);
+      return textResponse(uniqSorted(vals).join('\n') + '\n');
+    }
+    if (key === 'pa/md5') return textResponse(iocLines(st, 'Hash', 32).join('\n') + '\n');
+    if (key === 'pa/sha256') return textResponse(iocLines(st, 'Hash', 64).join('\n') + '\n');
+    if (key === 'pa/email') return textResponse(iocLines(st, 'Email').join('\n') + '\n');
+
+    if (key === 'cp/ip') return textResponse(iocLines(st, 'IP').join('\n') + '\n');
+    if (key === 'cp/domain') return textResponse(iocLines(st, 'Domain').join('\n') + '\n');
+    if (key === 'cp/url') return textResponse(iocLines(st, 'URL').join('\n') + '\n');
+    if (key === 'cp/hash') return textResponse(iocLines(st, 'Hash').join('\n') + '\n');
+    if (key === 'cp/md5') return textResponse(iocLines(st, 'Hash', 32).join('\n') + '\n');
+    if (key === 'cp/sha1') return textResponse(iocLines(st, 'Hash', 40).join('\n') + '\n');
+    if (key === 'cp/sha256') return textResponse(iocLines(st, 'Hash', 64).join('\n') + '\n');
+
+    if (key === 'esa/email') return textResponse(iocLines(st, 'Email').join(','), 200, 'text/plain; charset=utf-8');
+
+    if (key === 'epo/files-list') {
+      const tickets = uniqSorted((st.iocs || []).map(x => String(x.ticket_id || '').trim()).filter(Boolean));
+      return textResponse(tickets.join('\n') + '\n');
+    }
+
+    if (key === 'stix') {
+      const objs = (st.iocs || []).slice(0, 2000).map(x => ({
+        type: 'indicator',
+        name: String(x.value || '').trim(),
+        pattern: String(x.value || '').trim(),
+        created: x.created_at || new Date().toISOString(),
+      })).filter(o => o.name);
+      return textResponse(JSON.stringify({ type: 'bundle', objects: objs }, null, 2), 200, 'application/json; charset=utf-8');
+    }
+
+    if (key === 'yara-list') {
+      const names = uniqSorted((st.yara || []).map(x => String(x.filename || '').trim()).filter(Boolean));
+      return textResponse(names.join('\n') + '\n');
+    }
+    if (seg[0] === 'yara-content' && seg[1]) {
+      const filename = seg.slice(1).join('/');
+      return window._demoRealFetch('./assets/yara/' + filename, opts);
+    }
+
+    return textResponse('Not implemented in demo: ' + path + '\\n', 404);
   }
 
   function avatarUrlFor(user) {
@@ -662,6 +756,9 @@
       const u = new URL(url, window.location.href);
       if (u.pathname.startsWith('/api/')) {
         return handleApi(u.toString(), init);
+      }
+      if (u.pathname.startsWith('/feed/')) {
+        return handleFeed(u.toString(), init);
       }
     } catch (e) {
       // ignore and fall through

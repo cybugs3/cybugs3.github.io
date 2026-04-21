@@ -9,6 +9,10 @@
     "read_only": "צפייה בלבד (התחבר לעריכה)",
     "login_required": "נא להתחבר כדי לשלוח IOCs"
   },
+  "nav": {
+    "open_menu": "פתיחת תפריט",
+    "close_menu": "סגירת תפריט"
+  },
   "tab": {
     "submit": "שליחת IOCs",
     "search": "חיפוש וחקירה",
@@ -288,6 +292,7 @@
     "select_campaign": "-- בחר קמפיין --",
     "link_btn": "קשר IOC",
     "loading": "טוען…",
+    "no_description": "אין תיאור",
     "name_placeholder": "שם קמפיין",
     "desc_placeholder": "תיאור אופציונלי",
     "ioc_value_placeholder": "ערך IOC מדויק",

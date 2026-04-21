@@ -1,0 +1,21 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Feed</title>
+<script src="./static/js/demo-mock-api.js"></script>
+<pre id="out"></pre>
+<script>
+(function () {
+  'use strict';
+  var u = new URL(window.location.href);
+  var path = (u.searchParams.get('path') || '/feed/ip').trim();
+  if (!path.startsWith('/feed/')) path = '/feed/ip';
+  fetch(path, { method: 'GET' }).then(function (res) {
+    return res.text().then(function (t) { return { ok: res.ok, status: res.status, text: t }; });
+  }).then(function (r) {
+    document.title = path;
+    document.getElementById('out').textContent = r.ok ? (r.text || '') : ('Error ' + r.status + '\n' + (r.text || ''));
+  }).catch(function (e) {
+    document.getElementById('out').textContent = String(e && e.message ? e.message : e);
+  });
+})();
+</script>

@@ -116,6 +116,9 @@ def _render_static_index_html(*, version: str = "DEMO") -> str:
         '<script src="./static/js/demo-mock-api.js"></script>\n    <script src="./static/js/app.js"></script>',
     )
 
+    # Mark HTML as demo for demo-only JS behaviors.
+    tpl = tpl.replace("<html", '<html data-demo="1"', 1)
+
     # Strip Jinja comments (best-effort)
     tpl = re.sub(r"\{#.*?#\}", "", tpl, flags=re.DOTALL)
 
@@ -123,6 +126,31 @@ def _render_static_index_html(*, version: str = "DEMO") -> str:
     tpl = re.sub(r"\{\{[^}]+\}\}", "", tpl)
     tpl = re.sub(r"\{%[^%]+%\}", "", tpl)
     return tpl
+
+
+def _feed_viewer_html() -> str:
+    return """<!doctype html>
+<meta charset="utf-8">
+<title>Feed</title>
+<script src="./static/js/demo-mock-api.js"></script>
+<pre id="out"></pre>
+<script>
+(function () {
+  'use strict';
+  var u = new URL(window.location.href);
+  var path = (u.searchParams.get('path') || '/feed/ip').trim();
+  if (!path.startsWith('/feed/')) path = '/feed/ip';
+  fetch(path, { method: 'GET' }).then(function (res) {
+    return res.text().then(function (t) { return { ok: res.ok, status: res.status, text: t }; });
+  }).then(function (r) {
+    document.title = path;
+    document.getElementById('out').textContent = r.ok ? (r.text || '') : ('Error ' + r.status + '\\n' + (r.text || ''));
+  }).catch(function (e) {
+    document.getElementById('out').textContent = String(e && e.message ? e.message : e);
+  });
+})();
+</script>
+"""
 
 
 def _write_demo_mock_api_js(path: Path) -> None:
@@ -143,6 +171,13 @@ def _write_demo_mock_api_js(path: Path) -> None:
     return new Response(body, {
       status: status || 200,
       headers: { 'Content-Type': 'application/json' },
+    });
+  }
+
+  function textResponse(text, status, contentType) {
+    return new Response(String(text || ''), {
+      status: status || 200,
+      headers: { 'Content-Type': contentType || 'text/plain; charset=utf-8' },
     });
   }
 
@@ -206,6 +241,93 @@ def _write_demo_mock_api_js(path: Path) -> None:
     const next = Object.assign({}, st0, { _cacheReady: true, users, iocs, campaigns, yara, champs, user });
     saveState(next);
     return next;
+  }
+
+  function stripUrlProtocol(url) {
+    const s = String(url || '').trim();
+    return s.replace(/^(?:https?|ftp|sftp):\/\//i, '');
+  }
+
+  function uniqSorted(arr) {
+    const out = Array.from(new Set((arr || []).filter(Boolean).map(x => String(x).trim()).filter(Boolean)));
+    out.sort((a, b) => a.localeCompare(b));
+    return out;
+  }
+
+  function iocLines(st, type, hashLen) {
+    const iocs = (st && st.iocs) ? st.iocs : [];
+    return uniqSorted(iocs
+      .filter(x => String(x.type || '') === String(type || ''))
+      .map(x => String(x.value || '').trim())
+      .filter(v => v && (!hashLen || v.length === hashLen)));
+  }
+
+  async function handleFeed(url, opts) {
+    const u = new URL(url, window.location.href);
+    const path = u.pathname || '';
+    const method = ((opts && opts.method) || 'GET').toUpperCase();
+    if (method !== 'GET') return textResponse('Method not allowed', 405);
+    if (!path.startsWith('/feed/')) return textResponse('Not found', 404);
+
+    const st = await ensureCache();
+    const seg = path.replace(/^\/feed\//, '').split('/').filter(Boolean);
+    const key = seg.join('/');
+
+    if (key === 'ip') return textResponse(iocLines(st, 'IP').join('\n') + '\n');
+    if (key === 'domain') return textResponse(iocLines(st, 'Domain').join('\n') + '\n');
+    if (key === 'url') return textResponse(iocLines(st, 'URL').join('\n') + '\n');
+    if (key === 'email') return textResponse(iocLines(st, 'Email').join('\n') + '\n');
+
+    if (key === 'hash') return textResponse(iocLines(st, 'Hash').join('\n') + '\n');
+    if (key === 'md5') return textResponse(iocLines(st, 'Hash', 32).join('\n') + '\n');
+    if (key === 'sha1') return textResponse(iocLines(st, 'Hash', 40).join('\n') + '\n');
+    if (key === 'sha256') return textResponse(iocLines(st, 'Hash', 64).join('\n') + '\n');
+
+    if (key === 'pa/ip') return textResponse(iocLines(st, 'IP').join('\n') + '\n');
+    if (key === 'pa/domain') return textResponse(iocLines(st, 'Domain').join('\n') + '\n');
+    if (key === 'pa/url') {
+      const vals = iocLines(st, 'URL').map(stripUrlProtocol);
+      return textResponse(uniqSorted(vals).join('\n') + '\n');
+    }
+    if (key === 'pa/md5') return textResponse(iocLines(st, 'Hash', 32).join('\n') + '\n');
+    if (key === 'pa/sha256') return textResponse(iocLines(st, 'Hash', 64).join('\n') + '\n');
+    if (key === 'pa/email') return textResponse(iocLines(st, 'Email').join('\n') + '\n');
+
+    if (key === 'cp/ip') return textResponse(iocLines(st, 'IP').join('\n') + '\n');
+    if (key === 'cp/domain') return textResponse(iocLines(st, 'Domain').join('\n') + '\n');
+    if (key === 'cp/url') return textResponse(iocLines(st, 'URL').join('\n') + '\n');
+    if (key === 'cp/hash') return textResponse(iocLines(st, 'Hash').join('\n') + '\n');
+    if (key === 'cp/md5') return textResponse(iocLines(st, 'Hash', 32).join('\n') + '\n');
+    if (key === 'cp/sha1') return textResponse(iocLines(st, 'Hash', 40).join('\n') + '\n');
+    if (key === 'cp/sha256') return textResponse(iocLines(st, 'Hash', 64).join('\n') + '\n');
+
+    if (key === 'esa/email') return textResponse(iocLines(st, 'Email').join(','), 200, 'text/plain; charset=utf-8');
+
+    if (key === 'epo/files-list') {
+      const tickets = uniqSorted((st.iocs || []).map(x => String(x.ticket_id || '').trim()).filter(Boolean));
+      return textResponse(tickets.join('\n') + '\n');
+    }
+
+    if (key === 'stix') {
+      const objs = (st.iocs || []).slice(0, 2000).map(x => ({
+        type: 'indicator',
+        name: String(x.value || '').trim(),
+        pattern: String(x.value || '').trim(),
+        created: x.created_at || new Date().toISOString(),
+      })).filter(o => o.name);
+      return textResponse(JSON.stringify({ type: 'bundle', objects: objs }, null, 2), 200, 'application/json; charset=utf-8');
+    }
+
+    if (key === 'yara-list') {
+      const names = uniqSorted((st.yara || []).map(x => String(x.filename || '').trim()).filter(Boolean));
+      return textResponse(names.join('\n') + '\n');
+    }
+    if (seg[0] === 'yara-content' && seg[1]) {
+      const filename = seg.slice(1).join('/');
+      return window._demoRealFetch('./assets/yara/' + filename, opts);
+    }
+
+    return textResponse('Not implemented in demo: ' + path + '\\n', 404);
   }
 
   function avatarUrlFor(user) {
@@ -793,6 +915,9 @@ def _write_demo_mock_api_js(path: Path) -> None:
       if (u.pathname.startsWith('/api/')) {
         return handleApi(u.toString(), init);
       }
+      if (u.pathname.startsWith('/feed/')) {
+        return handleFeed(u.toString(), init);
+      }
     } catch (e) {
       // ignore and fall through
     }
@@ -884,6 +1009,99 @@ def classify_ioc(value: str) -> str:
     if "." in v and " " not in v and "/" not in v:
         return "Domain"
     return "Unknown"
+
+
+def _strip_url_protocol(url: str) -> str:
+    s = (url or "").strip()
+    s = re.sub(r"^(?:https?|ftp|sftp)://", "", s, flags=re.IGNORECASE)
+    return s
+
+
+def _write_text(path: Path, text: str) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(text, encoding="utf-8")
+
+
+def _feed_lines(iocs: list[dict], *, ioc_type: str, hash_len: int | None = None) -> list[str]:
+    out: list[str] = []
+    for r in (iocs or []):
+        if (r.get("type") or "") != ioc_type:
+            continue
+        v = str(r.get("value") or "").strip()
+        if not v:
+            continue
+        if hash_len is not None and len(v) != hash_len:
+            continue
+        out.append(v)
+    # stable, human-friendly order
+    return sorted(set(out))
+
+
+def _write_static_feeds(*, out_dir: Path, iocs: list[dict], yara_rows: list[dict]) -> None:
+    """
+    Create static equivalents for the plain-text /feed/* endpoints so clicking links in the demo works
+    under a simple static server (no Flask routes).
+    We write files without extensions so paths like /feed/ip map to feed/ip on disk.
+    """
+    feed_root = out_dir / "feed"
+
+    def write_plain(rel: str, lines: list[str]) -> None:
+        _write_text(feed_root / rel, "\n".join(lines) + ("\n" if lines else ""))
+
+    # Base feeds
+    write_plain("ip", _feed_lines(iocs, ioc_type="IP"))
+    write_plain("domain", _feed_lines(iocs, ioc_type="Domain"))
+    write_plain("url", _feed_lines(iocs, ioc_type="URL"))
+    write_plain("email", _feed_lines(iocs, ioc_type="Email"))
+    # Hash feeds
+    hashes_all = _feed_lines(iocs, ioc_type="Hash")
+    write_plain("hash", hashes_all)
+    write_plain("md5", _feed_lines(iocs, ioc_type="Hash", hash_len=32))
+    write_plain("sha1", _feed_lines(iocs, ioc_type="Hash", hash_len=40))
+    write_plain("sha256", _feed_lines(iocs, ioc_type="Hash", hash_len=64))
+
+    # Palo Alto variants (/feed/pa/*)
+    write_plain("pa/ip", _feed_lines(iocs, ioc_type="IP"))
+    write_plain("pa/domain", _feed_lines(iocs, ioc_type="Domain"))
+    write_plain("pa/url", sorted(set(_strip_url_protocol(x) for x in _feed_lines(iocs, ioc_type="URL"))))
+    write_plain("pa/md5", _feed_lines(iocs, ioc_type="Hash", hash_len=32))
+    write_plain("pa/sha256", _feed_lines(iocs, ioc_type="Hash", hash_len=64))
+    write_plain("pa/email", _feed_lines(iocs, ioc_type="Email"))
+
+    # Check Point family (/feed/cp/*): keep simple plain lists (CSV formatting is not critical for demo)
+    write_plain("cp/ip", _feed_lines(iocs, ioc_type="IP"))
+    write_plain("cp/domain", _feed_lines(iocs, ioc_type="Domain"))
+    write_plain("cp/url", _feed_lines(iocs, ioc_type="URL"))
+    write_plain("cp/hash", hashes_all)
+    write_plain("cp/md5", _feed_lines(iocs, ioc_type="Hash", hash_len=32))
+    write_plain("cp/sha1", _feed_lines(iocs, ioc_type="Hash", hash_len=40))
+    write_plain("cp/sha256", _feed_lines(iocs, ioc_type="Hash", hash_len=64))
+
+    # ESA email (CSV)
+    emails = _feed_lines(iocs, ioc_type="Email")
+    _write_text(feed_root / "esa" / "email", ",".join(emails))
+
+    # ePO: files-list = ticket ids present in demo data
+    tickets = sorted({str(r.get("ticket_id") or "").strip() for r in (iocs or []) if str(r.get("ticket_id") or "").strip()})
+    write_plain("epo/files-list", tickets)
+
+    # STIX feed (demo-friendly JSON bundle)
+    stix_objs = []
+    for r in (iocs or [])[:2000]:
+        t = r.get("type") or ""
+        v = str(r.get("value") or "").strip()
+        if not v or t not in ("IP", "Domain", "URL", "Email", "Hash"):
+            continue
+        stix_objs.append({"type": "indicator", "name": v, "pattern": v, "created": r.get("created_at") or _now_iso()})
+    _write_text(feed_root / "stix", json.dumps({"type": "bundle", "objects": stix_objs}, ensure_ascii=False, indent=2))
+
+    # YARA list + content
+    yar_names = sorted({str(r.get("filename") or "").strip() for r in (yara_rows or []) if str(r.get("filename") or "").strip()})
+    write_plain("yara-list", yar_names)
+    for name in yar_names:
+        src = out_dir / "assets" / "yara" / name
+        if src.is_file():
+            _write_text(feed_root / "yara-content" / name, _read_text(src))
 
 
 def main() -> None:
@@ -1067,6 +1285,9 @@ def main() -> None:
             item["campaign"] = cmap.get(cid, "") if cid is not None else ""
 
     _write_json(OUT_DATA / "iocs.json", ioc_items[:target_n])
+
+    # Build static /feed/* equivalents so Feed Catalog links work in the demo
+    _write_static_feeds(out_dir=OUT_DIR, iocs=ioc_items[:target_n], yara_rows=yara_rows)
 
     # ---------------------------------------------------------------------
     # Champs static dataset (for Champs Analysis spotlight + leaderboard)
@@ -1289,6 +1510,7 @@ def main() -> None:
     # Render the real UI shell as static HTML
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     (OUT_DIR / "index.html").write_text(_render_static_index_html(version="DEMO"), encoding="utf-8")
+    (OUT_DIR / "feed-view.html").write_text(_feed_viewer_html(), encoding="utf-8")
 
     print("Built demo site at:", OUT_DIR)
 
